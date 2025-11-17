@@ -1,0 +1,64 @@
+{
+  "topicId": "electrical-systems",
+  "levels": {
+    "level1": {
+      "name": "Level 1 - Basic Electrical Systems",
+      "pairCount": 6,
+      "description": "Fundamental electrical components",
+      "cards": [
+        {"id": "battery-name", "matchId": "battery", "class": "component", "emoji": "🔋", "title": "BATTERY", "type": "Component", "content": "Power source"},
+        {"id": "battery-desc", "matchId": "battery", "class": "component", "emoji": "⚡", "title": "Function", "type": "Component", "content": "Stores electrical energy Provides starting power"},
+        {"id": "alternator-name", "matchId": "alternator", "class": "component", "emoji": "⚙️", "title": "ALTERNATOR", "type": "Component", "content": "Power generator"},
+        {"id": "alternator-desc", "matchId": "alternator", "class": "component", "emoji": "🔄", "title": "Function", "type": "Component", "content": "Generates electricity Charges battery Runs electrical systems"},
+        {"id": "starter-name", "matchId": "starter", "class": "component", "emoji": "🚀", "title": "STARTER MOTOR", "type": "Component", "content": "Engine ignition"},
+        {"id": "starter-desc", "matchId": "starter", "class": "component", "emoji": "🔧", "title": "Function", "type": "Component", "content": "Cranks engine for starting Uses battery power"},
+        {"id": "headlight-name", "matchId": "headlight", "class": "component", "emoji": "💡", "title": "HEADLIGHT", "type": "Component", "content": "Front lighting"},
+        {"id": "headlight-desc", "matchId": "headlight", "class": "component", "emoji": "🌙", "title": "Function", "type": "Component", "content": "Illuminates road ahead Safety lighting"},
+        {"id": "wiring-name", "matchId": "wiring", "class": "component", "emoji": "🔗", "title": "WIRING HARNESS", "type": "Component", "content": "Electrical connections"},
+        {"id": "wiring-desc", "matchId": "wiring", "class": "component", "emoji": "📍", "title": "Function", "type": "Component", "content": "Connects all electrical components Transmits power and signals"}
+      ]
+    },
+    "level2": {
+      "name": "Level 2 - Advanced Electrical Systems",
+      "pairCount": 10,
+      "description": "Complex electrical circuits and diagnostics",
+      "cards": [
+        {"id": "ecm-name", "matchId": "ecm", "class": "component", "emoji": "🖥️", "title": "ECM - Engine Control Module", "type": "Component", "content": "Main computer"},
+        {"id": "ecm-desc", "matchId": "ecm", "class": "component", "emoji": "⚙️", "title": "Function", "type": "Component", "content": "Controls engine operation Manages fuel injection Optimizes performance"},
+        {"id": "can-bus", "matchId": "canbus", "class": "component", "emoji": "🔄", "title": "CAN BUS", "type": "System", "content": "Data network"},
+        {"id": "can-bus-desc", "matchId": "canbus", "class": "component", "emoji": "📡", "title": "Purpose", "type": "System", "content": "Connects all modules Transmits diagnostic data High-speed communication"},
+        {"id": "relay-name", "matchId": "relay", "class": "component", "emoji": "🔌", "title": "RELAY", "type": "Component", "content": "Electrical switch"},
+        {"id": "relay-desc", "matchId": "relay", "class": "component", "emoji": "💫", "title": "Function", "type": "Component", "content": "Switches high power circuits Controls fan motors Protective device"},
+        {"id": "fuse-name", "matchId": "fuse", "class": "component", "emoji": "⚡", "title": "FUSE", "type": "Component", "content": "Circuit protection"},
+        {"id": "fuse-desc", "matchId": "fuse", "class": "component", "emoji": "🔒", "title": "Function", "type": "Component", "content": "Protects wiring Breaks circuit on overload Replaceable safety device"},
+        {"id": "sensor-name", "matchId": "sensor", "class": "component", "emoji": "📊", "title": "SENSOR", "type": "Component", "content": "Data detection"},
+        {"id": "sensor-desc", "matchId": "sensor", "class": "component", "emoji": "🎯", "title": "Function", "type": "Component", "content": "Monitors engine conditions Sends data to ECM Provides feedback"},
+        {"id": "ground-name", "matchId": "ground", "class": "component", "emoji": "🔌", "title": "GROUND CONNECTION", "type": "Component", "content": "Return path"},
+        {"id": "ground-desc", "matchId": "ground", "class": "component", "emoji": "📍", "title": "Importance", "type": "Component", "content": "Completes electrical circuit Essential for all systems Safety critical"},
+        {"id": "charging-system", "matchId": "charge", "class": "component", "emoji": "🔋", "title": "CHARGING SYSTEM", "type": "System", "content": "Voltage regulation"},
+        {"id": "charging-system-desc", "matchId": "charge", "class": "component", "emoji": "⚙️", "title": "Operation", "type": "System", "content": "Alternator charges battery Regulator controls output Maintains voltage"},
+        {"id": "starting-system", "matchId": "start", "class": "component", "emoji": "🚀", "title": "STARTING SYSTEM", "type": "System", "content": "Engine cranking"},
+        {"id": "starting-system-desc", "matchId": "start", "class": "component", "emoji": "⚡", "title": "Operation", "type": "System", "content": "Battery powers starter High current draw Solenoid engages pinion"}
+      ]
+    },
+    "level3": {
+      "name": "Level 3 - Expert Electrical Diagnostics",
+      "pairCount": 12,
+      "description": "Advanced diagnostics and system integration",
+      "cards": [
+        {"id": "dtc-name", "matchId": "dtc", "class": "component", "emoji": "🔍", "title": "DTC - Diagnostic Trouble Code", "type": "Concept", "content": "Error identification"},
+        {"id": "dtc-desc", "matchId": "dtc", "class": "component", "emoji": "📋", "title": "Function", "type": "Concept", "content": "Identifies system faults Stored in ECM P-codes B-codes U-codes"},
+        {"id": "obd-name", "matchId": "obd", "class": "component", "emoji": "🖥️", "title": "OBD-II", "type": "System", "content": "Diagnostic standard"},
+        {"id": "obd-desc", "matchId": "obd", "class": "component", "emoji": "📊", "title": "Purpose", "type": "System", "content": "Standardized diagnostics Scan tool compatible Emissions monitoring"},
+        {"id": "can-protocol", "matchId": "canproto", "class": "component", "emoji": "📡", "title": "CAN PROTOCOL", "type": "System", "content": "Communication standard"},
+        {"id": "can-protocol-desc", "matchId": "canproto", "class": "component", "emoji": "🔄", "title": "Features", "type": "System", "content": "500 kbps data rate Multi-module network Fault tolerant"},
+        {"id": "pid-name", "matchId": "pid", "class": "component", "emoji": "📊", "title": "PID - Parameter ID", "type": "Concept", "content": "Live data display"},
+        {"id": "pid-desc", "matchId": "pid", "class": "component", "emoji": "📈", "title": "Usage", "type": "Concept", "content": "Monitors system parameters Engine temp fuel trim Air mass"},
+        {"id": "multiplex-name", "matchId": "multiplex", "class": "component", "emoji": "🔄", "title": "MULTIPLEXED WIRING", "type": "System", "content": "Signal sharing"},
+        {"id": "multiplex-desc", "matchId": "multiplex", "class": "component", "emoji": "💫", "title": "Benefit", "type": "System", "content": "Reduces wiring complexity Multiple signals one wire Sophisticated control"},
+        {"id": "bms-name", "matchId": "bms", "class": "component", "emoji": "🔋", "title": "BMS - Battery Management", "type": "System", "content": "Battery protection"},
+        {"id": "bms-desc", "matchId": "bms", "class": "component", "emoji": "⚙️", "title": "Function", "type": "System", "content": "Monitors battery health Prevents overcharge Balances cells"}
+      ]
+    }
+  }
+}

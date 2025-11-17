@@ -1,0 +1,105 @@
+{
+  "topicId": "TOPIC_ID_HERE",
+  "levels": {
+    "entry": {
+      "name": "Entry Level 3 - Basic Introduction",
+      "pairCount": 4,
+      "description": "Simple introduction to the topic",
+      "cards": [
+        {
+          "id": "concept1-name",
+          "matchId": "concept1",
+          "class": "component",
+          "emoji": "🔧",
+          "title": "CONCEPT NAME",
+          "type": "Introduction",
+          "content": "What it is"
+        },
+        {
+          "id": "concept1-desc",
+          "matchId": "concept1",
+          "class": "component",
+          "emoji": "💡",
+          "title": "Simple Explanation",
+          "type": "Description",
+          "content": "How it works\nWhy it matters\nBasic understanding"
+        }
+      ]
+    },
+    "level1": {
+      "name": "Level 1 - Foundation Knowledge",
+      "pairCount": 8,
+      "description": "Foundational understanding with components",
+      "cards": [
+        {
+          "id": "component1-name",
+          "matchId": "component1",
+          "class": "component",
+          "emoji": "⚙️",
+          "title": "COMPONENT NAME",
+          "type": "Component",
+          "content": "What it is"
+        },
+        {
+          "id": "component1-desc",
+          "matchId": "component1",
+          "class": "component",
+          "emoji": "🔧",
+          "title": "Function",
+          "type": "Component",
+          "content": "Main purpose\nHow it operates\nWhere it's used"
+        }
+      ]
+    },
+    "level2": {
+      "name": "Level 2 - Intermediate Systems",
+      "pairCount": 10,
+      "description": "System interactions and technical details",
+      "cards": [
+        {
+          "id": "system1-name",
+          "matchId": "system1",
+          "class": "component",
+          "emoji": "📊",
+          "title": "SYSTEM NAME",
+          "type": "System",
+          "content": "System overview"
+        },
+        {
+          "id": "system1-desc",
+          "matchId": "system1",
+          "class": "component",
+          "emoji": "⚙️",
+          "title": "Operation",
+          "type": "System",
+          "content": "How system works\nKey interactions\nPerformance aspects"
+        }
+      ]
+    },
+    "level3": {
+      "name": "Level 3 - Advanced Diagnostics",
+      "pairCount": 12,
+      "description": "Expert-level knowledge with advanced concepts",
+      "cards": [
+        {
+          "id": "advanced1-name",
+          "matchId": "advanced1",
+          "class": "component",
+          "emoji": "🎯",
+          "title": "ADVANCED CONCEPT",
+          "type": "Technology",
+          "content": "Expert terminology"
+        },
+        {
+          "id": "advanced1-desc",
+          "matchId": "advanced1",
+          "class": "component",
+          "emoji": "📈",
+          "title": "Application",
+          "type": "Technology",
+          "content": "Complex operation\nDiagnostic procedures\nPerformance tuning"
+        }
+      ]
+    }
+  }
+}

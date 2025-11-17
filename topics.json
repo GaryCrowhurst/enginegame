@@ -1,0 +1,88 @@
+{
+  "topics": [
+    {
+      "id": "4-stroke-engine",
+      "name": "4-Stroke Engine Cycles",
+      "icon": "🏎️",
+      "description": "Learn how 4-stroke engines work",
+      "levels": ["entry", "level1", "level2", "level3"]
+    },
+    {
+      "id": "fuel-systems",
+      "name": "Fuel Systems",
+      "icon": "⛽",
+      "description": "Petrol and diesel fuel systems",
+      "levels": ["level1", "level2", "level3"]
+    },
+    {
+      "id": "electrical-systems",
+      "name": "Electrical Systems",
+      "icon": "🔋",
+      "description": "Batteries, charging, and lighting",
+      "levels": ["level1", "level2", "level3"]
+    },
+    {
+      "id": "braking-systems",
+      "name": "Braking Systems",
+      "icon": "🛑",
+      "description": "Brake components and operation",
+      "levels": ["level1", "level2", "level3"]
+    },
+    {
+      "id": "suspension-steering",
+      "name": "Suspension & Steering",
+      "icon": "🔧",
+      "description": "Chassis and handling systems",
+      "levels": ["level1", "level2", "level3"]
+    },
+    {
+      "id": "transmission",
+      "name": "Transmission Systems",
+      "icon": "⚙️",
+      "description": "Gearboxes and drivelines",
+      "levels": ["level1", "level2", "level3"]
+    },
+    {
+      "id": "exhaust-emissions",
+      "name": "Exhaust & Emissions",
+      "icon": "💨",
+      "description": "Emissions control and testing",
+      "levels": ["level1", "level2", "level3"]
+    },
+    {
+      "id": "engine-diagnostics",
+      "name": "Engine Diagnostics",
+      "icon": "🔍",
+      "description": "Fault-finding and testing",
+      "levels": ["level2", "level3"]
+    },
+    {
+      "id": "hybrid-electric",
+      "name": "Hybrid & Electric Vehicles",
+      "icon": "🔌",
+      "description": "Alternative fuel technologies",
+      "levels": ["level2", "level3"]
+    },
+    {
+      "id": "motorsport-prep",
+      "name": "Motorsport Preparation",
+      "icon": "🏁",
+      "description": "Race vehicle preparation",
+      "levels": ["level2", "level3"]
+    },
+    {
+      "id": "workshop-safety",
+      "name": "Workshop Safety",
+      "icon": "⚠️",
+      "description": "Health and safety in workshops",
+      "levels": ["entry", "level1", "level2", "level3"]
+    },
+    {
+      "id": "tools-equipment",
+      "name": "Tools & Equipment",
+      "icon": "🔨",
+      "description": "Workshop tools and measurement",
+      "levels": ["entry", "level1", "level2", "level3"]
+    }
+  ]
+}

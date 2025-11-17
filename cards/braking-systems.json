@@ -1,0 +1,368 @@
+{
+  "topicId": "braking-systems",
+  "levels": {
+    "level1": {
+      "name": "Level 1 - Basic Braking",
+      "pairCount": 6,
+      "description": "Fundamental braking components",
+      "cards": [
+        {
+          "id": "brake-pad-name",
+          "matchId": "brake-pad",
+          "emoji": "🟫",
+          "title": "BRAKE PAD",
+          "type": "Component",
+          "content": "Friction material",
+          "image_url": "images/brake-pad-component.jpg"
+        },
+        {
+          "id": "brake-pad-desc",
+          "matchId": "brake-pad",
+          "emoji": "🛑",
+          "title": "Function",
+          "type": "Component",
+          "content": "Grips rotor Creates friction Converts speed to heat",
+          "image_url": "images/brake-pad-component.jpg"
+        },
+        {
+          "id": "brake-rotor",
+          "matchId": "rotor",
+          "emoji": "⭕",
+          "title": "BRAKE ROTOR",
+          "type": "Component",
+          "content": "Rotating disc",
+          "image_url": "images/rotor-component.jpg"
+        },
+        {
+          "id": "brake-rotor-desc",
+          "matchId": "rotor",
+          "emoji": "🔄",
+          "title": "Function",
+          "type": "Component",
+          "content": "Attached to wheel Gripped by pads Dissipates heat",
+          "image_url": "images/rotor-component.jpg"
+        },
+        {
+          "id": "brake-drum",
+          "matchId": "drum",
+          "emoji": "🥁",
+          "title": "BRAKE DRUM",
+          "type": "Component",
+          "content": "Cylindrical housing",
+          "image_url": "images/drum-component.jpg"
+        },
+        {
+          "id": "brake-drum-desc",
+          "matchId": "drum",
+          "emoji": "🛑",
+          "title": "Function",
+          "type": "Component",
+          "content": "Houses brake shoes Attached to wheel Rear brake common",
+          "image_url": "images/drum-component.jpg"
+        },
+        {
+          "id": "brake-caliper",
+          "matchId": "caliper",
+          "emoji": "🔧",
+          "title": "BRAKE CALIPER",
+          "type": "Component",
+          "content": "Piston housing",
+          "image_url": "images/caliper-component.jpg"
+        },
+        {
+          "id": "brake-caliper-desc",
+          "matchId": "caliper",
+          "emoji": "⚙️",
+          "title": "Function",
+          "type": "Component",
+          "content": "Holds brake pads Applies pressure Clamps rotor",
+          "image_url": "images/caliper-component.jpg"
+        },
+        {
+          "id": "master-cyl-name",
+          "matchId": "master-cyl",
+          "emoji": "💧",
+          "title": "MASTER CYLINDER",
+          "type": "Component",
+          "content": "Pressure generator",
+          "image_url": "images/master-cyl-component.jpg"
+        },
+        {
+          "id": "master-cyl-desc",
+          "matchId": "master-cyl",
+          "emoji": "⚙️",
+          "title": "Function",
+          "type": "Component",
+          "content": "Activated by pedal Pressurizes brake fluid Distributes pressure",
+          "image_url": "images/master-cyl-component.jpg"
+        }
+      ]
+    },
+    "level2": {
+      "name": "Level 2 - Advanced Braking Systems",
+      "pairCount": 10,
+      "description": "Complex hydraulics and safety systems",
+      "cards": [
+        {
+          "id": "brake-fluid",
+          "matchId": "fluid",
+          "emoji": "💧",
+          "title": "BRAKE FLUID",
+          "type": "Medium",
+          "content": "Hydraulic liquid",
+          "image_url": "images/fluid-medium.jpg"
+        },
+        {
+          "id": "brake-fluid-desc",
+          "matchId": "fluid",
+          "emoji": "🌊",
+          "title": "Purpose",
+          "type": "Medium",
+          "content": "Transmits pressure Incompressible Hygroscopic",
+          "image_url": "images/fluid-medium.jpg"
+        },
+        {
+          "id": "abs-system",
+          "matchId": "abs",
+          "emoji": "🔒",
+          "title": "ABS - Anti-Lock System",
+          "type": "Safety",
+          "content": "Skid prevention",
+          "image_url": "images/abs-safety.jpg"
+        },
+        {
+          "id": "abs-system-desc",
+          "matchId": "abs",
+          "emoji": "📊",
+          "title": "Operation",
+          "type": "Safety",
+          "content": "Releases brake pressure Rapid cycling Prevents wheel lock",
+          "image_url": "images/abs-safety.jpg"
+        },
+        {
+          "id": "brake-hose",
+          "matchId": "hose",
+          "emoji": "🔗",
+          "title": "BRAKE HOSE",
+          "type": "Component",
+          "content": "Fluid conduit",
+          "image_url": "images/hose-component.jpg"
+        },
+        {
+          "id": "brake-hose-desc",
+          "matchId": "hose",
+          "emoji": "💫",
+          "title": "Function",
+          "type": "Component",
+          "content": "Carries brake fluid Flexible connections Inspect for damage",
+          "image_url": "images/hose-component.jpg"
+        },
+        {
+          "id": "brake-line",
+          "matchId": "line",
+          "emoji": "📏",
+          "title": "BRAKE LINE",
+          "type": "Component",
+          "content": "Hard piping",
+          "image_url": "images/line-component.jpg"
+        },
+        {
+          "id": "brake-line-desc",
+          "matchId": "line",
+          "emoji": "🔒",
+          "title": "Function",
+          "type": "Component",
+          "content": "Fixed conduits Rigid protection Steel tubes",
+          "image_url": "images/line-component.jpg"
+        },
+        {
+          "id": "proportioning",
+          "matchId": "prop",
+          "emoji": "⚖️",
+          "title": "PROPORTIONING VALVE",
+          "type": "Component",
+          "content": "Pressure distribution",
+          "image_url": "images/prop-component.jpg"
+        },
+        {
+          "id": "proportioning-desc",
+          "matchId": "prop",
+          "emoji": "📊",
+          "title": "Function",
+          "type": "Component",
+          "content": "Adjusts front rear pressure Prevents rear skid Improves control",
+          "image_url": "images/prop-component.jpg"
+        },
+        {
+          "id": "brake-switch",
+          "matchId": "switch",
+          "emoji": "🔌",
+          "title": "BRAKE SWITCH",
+          "type": "Component",
+          "content": "Light activation",
+          "image_url": "images/switch-component.jpg"
+        },
+        {
+          "id": "brake-switch-desc",
+          "matchId": "switch",
+          "emoji": "💡",
+          "title": "Function",
+          "type": "Component",
+          "content": "Activates brake lights Pedal activated Safety signal",
+          "image_url": "images/switch-component.jpg"
+        },
+        {
+          "id": "handbrake",
+          "matchId": "hand",
+          "emoji": "🎯",
+          "title": "HANDBRAKE (PARKING)",
+          "type": "Component",
+          "content": "Vehicle holding",
+          "image_url": "images/hand-component.jpg"
+        },
+        {
+          "id": "handbrake-desc",
+          "matchId": "hand",
+          "emoji": "🔒",
+          "title": "Function",
+          "type": "Component",
+          "content": "Mechanical hold Independent system Prevents rolling",
+          "image_url": "images/hand-component.jpg"
+        },
+        {
+          "id": "brake-pedal",
+          "matchId": "pedal",
+          "emoji": "🦶",
+          "title": "BRAKE PEDAL",
+          "type": "Component",
+          "content": "Driver input",
+          "image_url": "images/pedal-component.jpg"
+        },
+        {
+          "id": "brake-pedal-desc",
+          "matchId": "pedal",
+          "emoji": "⚙️",
+          "title": "Operation",
+          "type": "Component",
+          "content": "Mechanical linkage Activates master cylinder Servo assisted",
+          "image_url": "images/pedal-component.jpg"
+        }
+      ]
+    },
+    "level3": {
+      "name": "Level 3 - Expert Braking Technology",
+      "pairCount": 12,
+      "description": "Advanced diagnostics and electronic systems",
+      "cards": [
+        {
+          "id": "esp-name",
+          "matchId": "esp",
+          "emoji": "🎯",
+          "title": "ESP - Stability Control",
+          "type": "Safety",
+          "content": "Skid control",
+          "image_url": "images/esp-safety.jpg"
+        },
+        {
+          "id": "esp-desc",
+          "matchId": "esp",
+          "emoji": "📊",
+          "title": "Function",
+          "type": "Safety",
+          "content": "Monitors vehicle dynamics Applies individual brakes Corrects oversteer",
+          "image_url": "images/esp-safety.jpg"
+        },
+        {
+          "id": "fade-name",
+          "matchId": "fade",
+          "emoji": "🌡️",
+          "title": "BRAKE FADE",
+          "type": "Phenomenon",
+          "content": "Performance loss",
+          "image_url": "images/fade-phenomenon.jpg"
+        },
+        {
+          "id": "fade-desc",
+          "matchId": "fade",
+          "emoji": "⬆️",
+          "title": "Cause",
+          "type": "Phenomenon",
+          "content": "Excessive heat Fluid vaporization Reduced friction",
+          "image_url": "images/fade-phenomenon.jpg"
+        },
+        {
+          "id": "glazing",
+          "matchId": "glaze",
+          "emoji": "💎",
+          "title": "PAD GLAZING",
+          "type": "Condition",
+          "content": "Surface hardening",
+          "image_url": "images/glaze-condition.jpg"
+        },
+        {
+          "id": "glazing-desc",
+          "matchId": "glaze",
+          "emoji": "🔥",
+          "title": "Effect",
+          "type": "Condition",
+          "content": "Reduces friction Requires replacement Prevents stopping",
+          "image_url": "images/glaze-condition.jpg"
+        },
+        {
+          "id": "bedding",
+          "matchId": "bed",
+          "emoji": "🛠️",
+          "title": "BRAKE BEDDING",
+          "type": "Process",
+          "content": "Break-in procedure",
+          "image_url": "images/bed-process.jpg"
+        },
+        {
+          "id": "bedding-desc",
+          "matchId": "bed",
+          "emoji": "⚙️",
+          "title": "Purpose",
+          "type": "Process",
+          "content": "Seats pad material Transfers material to rotor Establishes contact",
+          "image_url": "images/bed-process.jpg"
+        },
+        {
+          "id": "pedal-feel",
+          "matchId": "feel",
+          "emoji": "🎯",
+          "title": "PEDAL FEEL",
+          "type": "Characteristic",
+          "content": "Driver feedback",
+          "image_url": "images/feel-characteristic.jpg"
+        },
+        {
+          "id": "pedal-feel-desc",
+          "matchId": "feel",
+          "emoji": "📊",
+          "title": "Factors",
+          "type": "Characteristic",
+          "content": "Booster assist Pad material Fluid type",
+          "image_url": "images/feel-characteristic.jpg"
+        },
+        {
+          "id": "stopping-distance",
+          "matchId": "stop",
+          "emoji": "📏",
+          "title": "STOPPING DISTANCE",
+          "type": "Performance",
+          "content": "Braking efficiency",
+          "image_url": "images/stop-performance.jpg"
+        },
+        {
+          "id": "stopping-distance-desc",
+          "matchId": "stop",
+          "emoji": "📈",
+          "title": "Variables",
+          "type": "Performance",
+          "content": "Speed Road surface Pad condition Weight",
+          "image_url": "images/stop-performance.jpg"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,495 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "Central image bank for all Motor Vehicle Learning topics",
+    "lastUpdated": "2025-11-17",
+    "totalImages": 95,
+    "usage": "Reference images by their 'id' in card JSON using: {\"image_id\": \"image-name-here\"}"
+  },
+
+  "images": {
+    "4-stroke-engine": {
+      "intake-stroke": {
+        "id": "intake-stroke",
+        "name": "Intake Stroke",
+        "url": "images/4-stroke/Four-Stroke-Engine.png",
+        "description": "Piston moving down, intake valve open, fuel mixture entering",
+        "type": "diagram",
+        "size": "400x300",
+        "topic": "4-stroke-engine",
+        "levels": ["entry", "level1", "level2"]
+      },
+      "compression-stroke": {
+        "id": "compression-stroke",
+        "name": "Compression Stroke",
+        "url": "images/4-stroke/Four-Stroke-Engine-Compression.png",
+        "description": "Both valves closed, piston moving up, mixture compressed",
+        "type": "diagram",
+        "size": "400x300",
+        "topic": "4-stroke-engine",
+        "levels": ["entry", "level1", "level2"]
+      },
+      "power-stroke": {
+        "id": "power-stroke",
+        "name": "Power Stroke",
+        "url": "images/4-stroke/Four-Stroke-Engine-Power.png",
+        "description": "Spark plug fires, explosion pushes piston down",
+        "type": "diagram",
+        "size": "400x300",
+        "topic": "4-stroke-engine",
+        "levels": ["entry", "level1", "level2"]
+      },
+      "exhaust-stroke": {
+        "id": "exhaust-stroke",
+        "name": "Exhaust Stroke",
+        "url": "images/4-stroke/Four-Stroke-Engine-Exhaust.png",
+        "description": "Exhaust valve open, piston moving up, waste gases expelled",
+        "type": "diagram",
+        "size": "400x300",
+        "topic": "4-stroke-engine",
+        "levels": ["entry", "level1", "level2"]
+      },
+      "piston-assembly": {
+        "id": "piston-assembly",
+        "name": "Piston Assembly",
+        "url": "images/4-stroke/piston-assembly.jpg",
+        "description": "Complete piston with rings and connecting rod",
+        "type": "photo",
+        "size": "350x350",
+        "topic": "4-stroke-engine",
+        "levels": ["level1", "level2", "level3"]
+      },
+      "spark-plug": {
+        "id": "spark-plug",
+        "name": "Spark Plug",
+        "url": "images/4-stroke/spark-plug.jpg",
+        "description": "Close-up of spark plug showing electrode gap",
+        "type": "photo",
+        "size": "300x400",
+        "topic": "4-stroke-engine",
+        "levels": ["level1", "level2"]
+      },
+      "crankshaft": {
+        "id": "crankshaft",
+        "name": "Crankshaft",
+        "url": "images/4-stroke/crankshaft.jpg",
+        "description": "Crankshaft with multiple crank pins and counterweights",
+        "type": "diagram",
+        "size": "500x300",
+        "topic": "4-stroke-engine",
+        "levels": ["level1", "level2"]
+      },
+      "connecting-rod": {
+        "id": "connecting-rod",
+        "name": "Connecting Rod",
+        "url": "images/4-stroke/connecting-rod.jpg",
+        "description": "Connecting rod linking piston to crankshaft",
+        "type": "photo",
+        "size": "350x200",
+        "topic": "4-stroke-engine",
+        "levels": ["level1", "level2"]
+      },
+      "cylinder-head": {
+        "id": "cylinder-head",
+        "name": "Cylinder Head",
+        "url": "images/4-stroke/cylinder-head.jpg",
+        "description": "Top view of cylinder head with valves and spark plug hole",
+        "type": "photo",
+        "size": "400x300",
+        "topic": "4-stroke-engine",
+        "levels": ["level1", "level2", "level3"]
+      },
+      "valve-timing-diagram": {
+        "id": "valve-timing-diagram",
+        "name": "Valve Timing Diagram",
+        "url": "images/4-stroke/valve-timing.jpg",
+        "description": "Graph showing valve opening/closing times in degrees",
+        "type": "diagram",
+        "size": "500x350",
+        "topic": "4-stroke-engine",
+        "levels": ["level2", "level3"]
+      },
+      "turbocharger": {
+        "id": "turbocharger",
+        "name": "Turbocharger",
+        "url": "images/4-stroke/turbocharger.jpg",
+        "description": "Turbo assembly with turbine and compressor wheels",
+        "type": "photo",
+        "size": "400x300",
+        "topic": "4-stroke-engine",
+        "levels": ["level2", "level3"]
+      },
+      "direct-injection": {
+        "id": "direct-injection",
+        "name": "Direct Injection Injector",
+        "url": "images/4-stroke/direct-injection.jpg",
+        "description": "Fuel injector mounted in cylinder head",
+        "type": "photo",
+        "size": "300x400",
+        "topic": "4-stroke-engine",
+        "levels": ["level2", "level3"]
+      }
+    },
+
+    "electrical-systems": {
+      "battery": {
+        "id": "battery",
+        "name": "Car Battery",
+        "url": "images/electrical/battery.jpg",
+        "description": "12V lead-acid battery showing terminals",
+        "type": "photo",
+        "size": "350x250",
+        "topic": "electrical-systems",
+        "levels": ["level1", "level2"]
+      },
+      "alternator": {
+        "id": "alternator",
+        "name": "Alternator",
+        "url": "images/electrical/alternator.jpg",
+        "description": "Engine-mounted alternator with internal winding visible",
+        "type": "photo",
+        "size": "400x300",
+        "topic": "electrical-systems",
+        "levels": ["level1", "level2"]
+      },
+      "starter-motor": {
+        "id": "starter-motor",
+        "name": "Starter Motor",
+        "url": "images/electrical/starter-motor.jpg",
+        "description": "Starter motor showing solenoid and drive mechanism",
+        "type": "photo",
+        "size": "350x300",
+        "topic": "electrical-systems",
+        "levels": ["level1", "level2"]
+      },
+      "wiring-loom": {
+        "id": "wiring-loom",
+        "name": "Wiring Loom",
+        "url": "images/electrical/wiring-loom.jpg",
+        "description": "Complete engine bay wiring harness",
+        "type": "photo",
+        "size": "500x350",
+        "topic": "electrical-systems",
+        "levels": ["level1", "level2", "level3"]
+      },
+      "fuse-box": {
+        "id": "fuse-box",
+        "name": "Fuse Box",
+        "url": "images/electrical/fuse-box.jpg",
+        "description": "Fuse and relay box with circuit protection",
+        "type": "photo",
+        "size": "400x300",
+        "topic": "electrical-systems",
+        "levels": ["level1", "level2"]
+      },
+      "multimeter": {
+        "id": "multimeter",
+        "name": "Digital Multimeter",
+        "url": "images/electrical/multimeter.jpg",
+        "description": "Digital multimeter for voltage, current, resistance testing",
+        "type": "photo",
+        "size": "300x400",
+        "topic": "electrical-systems",
+        "levels": ["level2", "level3"]
+      },
+      "obd-scanner": {
+        "id": "obd-scanner",
+        "name": "OBD-II Scanner",
+        "url": "images/electrical/obd-scanner.jpg",
+        "description": "Diagnostic scanner reading fault codes",
+        "type": "photo",
+        "size": "400x300",
+        "topic": "electrical-systems",
+        "levels": ["level2", "level3"]
+      },
+      "can-bus-diagram": {
+        "id": "can-bus-diagram",
+        "name": "CAN-BUS Network Diagram",
+        "url": "images/electrical/can-bus-diagram.jpg",
+        "description": "Vehicle network topology showing ECU connections",
+        "type": "diagram",
+        "size": "500x400",
+        "topic": "electrical-systems",
+        "levels": ["level2", "level3"]
+      },
+      "ecm": {
+        "id": "ecm",
+        "name": "Engine Control Module",
+        "url": "images/electrical/ecm.jpg",
+        "description": "ECM showing connectors and internal circuitry",
+        "type": "photo",
+        "size": "400x300",
+        "topic": "electrical-systems",
+        "levels": ["level2", "level3"]
+      },
+      "lambda-sensor": {
+        "id": "lambda-sensor",
+        "name": "Lambda Sensor",
+        "url": "images/electrical/lambda-sensor.jpg",
+        "description": "Oxygen sensor with heater element",
+        "type": "photo",
+        "size": "300x350",
+        "topic": "electrical-systems",
+        "levels": ["level1", "level2", "level3"]
+      }
+    },
+
+    "braking-systems": {
+      "disc-brake": {
+        "id": "disc-brake",
+        "name": "Disc Brake Assembly",
+        "url": "images/braking/disc-brake.jpg",
+        "description": "Complete disc brake showing caliper and rotor",
+        "type": "photo",
+        "size": "400x350",
+        "topic": "braking-systems",
+        "levels": ["level1", "level2"]
+      },
+      "drum-brake": {
+        "id": "drum-brake",
+        "name": "Drum Brake Assembly",
+        "url": "images/braking/drum-brake.jpg",
+        "description": "Drum brake with shoes and cylinders",
+        "type": "diagram",
+        "size": "400x350",
+        "topic": "braking-systems",
+        "levels": ["level1", "level2"]
+      },
+      "brake-pads": {
+        "id": "brake-pads",
+        "name": "Brake Pads",
+        "url": "images/braking/brake-pads.jpg",
+        "description": "Set of disc brake pads showing friction material",
+        "type": "photo",
+        "size": "350x200",
+        "topic": "braking-systems",
+        "levels": ["level1", "level2"]
+      },
+      "brake-rotor": {
+        "id": "brake-rotor",
+        "name": "Brake Rotor",
+        "url": "images/braking/brake-rotor.jpg",
+        "description": "Ventilated brake rotor with cooling fins",
+        "type": "photo",
+        "size": "400x400",
+        "topic": "braking-systems",
+        "levels": ["level1", "level2"]
+      },
+      "master-cylinder": {
+        "id": "master-cylinder",
+        "name": "Master Cylinder",
+        "url": "images/braking/master-cylinder.jpg",
+        "description": "Brake master cylinder with reservoir",
+        "type": "photo",
+        "size": "350x300",
+        "topic": "braking-systems",
+        "levels": ["level1", "level2"]
+      },
+      "abs-module": {
+        "id": "abs-module",
+        "name": "ABS Module",
+        "url": "images/braking/abs-module.jpg",
+        "description": "Anti-lock brake system control module",
+        "type": "photo",
+        "size": "400x300",
+        "topic": "braking-systems",
+        "levels": ["level2", "level3"]
+      },
+      "brake-fluid": {
+        "id": "brake-fluid",
+        "name": "Brake Fluid",
+        "url": "images/braking/brake-fluid.jpg",
+        "description": "DOT 4 brake fluid in container",
+        "type": "photo",
+        "size": "300x350",
+        "topic": "braking-systems",
+        "levels": ["level1", "level2"]
+      },
+      "brake-hose": {
+        "id": "brake-hose",
+        "name": "Brake Hose",
+        "url": "images/braking/brake-hose.jpg",
+        "description": "Reinforced brake line with fittings",
+        "type": "photo",
+        "size": "400x200",
+        "topic": "braking-systems",
+        "levels": ["level1", "level2"]
+      },
+      "esp-system": {
+        "id": "esp-system",
+        "name": "ESP Control Diagram",
+        "url": "images/braking/esp-system.jpg",
+        "description": "Electronic stability program system diagram",
+        "type": "diagram",
+        "size": "500x400",
+        "topic": "braking-systems",
+        "levels": ["level2", "level3"]
+      },
+      "regenerative-braking": {
+        "id": "regenerative-braking",
+        "name": "Regenerative Braking System",
+        "url": "images/braking/regenerative-braking.jpg",
+        "description": "Hybrid/EV energy recovery system diagram",
+        "type": "diagram",
+        "size": "500x350",
+        "topic": "braking-systems",
+        "levels": ["level2", "level3"]
+      }
+    },
+
+    "shared-tools": {
+      "wrench": {
+        "id": "wrench",
+        "name": "Adjustable Wrench",
+        "url": "images/tools/wrench.jpg",
+        "description": "Common workshop adjustable wrench",
+        "type": "photo",
+        "size": "400x200",
+        "topic": "tools-equipment",
+        "levels": ["level1", "level2"]
+      },
+      "socket-set": {
+        "id": "socket-set",
+        "name": "Socket Set",
+        "url": "images/tools/socket-set.jpg",
+        "description": "Complete socket and ratchet set",
+        "type": "photo",
+        "size": "500x350",
+        "topic": "tools-equipment",
+        "levels": ["level1", "level2"]
+      },
+      "screwdriver": {
+        "id": "screwdriver",
+        "name": "Screwdriver Set",
+        "url": "images/tools/screwdriver-set.jpg",
+        "description": "Various screwdrivers (Phillips, flat, torx)",
+        "type": "photo",
+        "size": "400x300",
+        "topic": "tools-equipment",
+        "levels": ["level1"]
+      },
+      "jack": {
+        "id": "jack",
+        "name": "Hydraulic Jack",
+        "url": "images/tools/hydraulic-jack.jpg",
+        "description": "2-3 tonne hydraulic jack for lifting",
+        "type": "photo",
+        "size": "300x400",
+        "topic": "tools-equipment",
+        "levels": ["level1", "level2"]
+      },
+      "torque-wrench": {
+        "id": "torque-wrench",
+        "name": "Torque Wrench",
+        "url": "images/tools/torque-wrench.jpg",
+        "description": "Precision torque wrench for critical fasteners",
+        "type": "photo",
+        "size": "400x150",
+        "topic": "tools-equipment",
+        "levels": ["level2", "level3"]
+      },
+      "safety-stand": {
+        "id": "safety-stand",
+        "name": "Jack Stand",
+        "url": "images/tools/safety-stand.jpg",
+        "description": "Pair of adjustable safety stands",
+        "type": "photo",
+        "size": "350x300",
+        "topic": "tools-equipment",
+        "levels": ["level1", "level2"]
+      }
+    },
+
+    "diagrams": {
+      "engine-cross-section": {
+        "id": "engine-cross-section",
+        "name": "Engine Cross-Section",
+        "url": "images/diagrams/engine-cross-section.jpg",
+        "description": "Complete 4-stroke engine internal structure",
+        "type": "diagram",
+        "size": "600x400",
+        "topic": "4-stroke-engine",
+        "levels": ["level1", "level2", "level3"]
+      },
+      "cooling-system": {
+        "id": "cooling-system",
+        "name": "Cooling System Diagram",
+        "url": "images/diagrams/cooling-system.jpg",
+        "description": "Radiator, thermostat, water pump system layout",
+        "type": "diagram",
+        "size": "500x400",
+        "topic": "4-stroke-engine",
+        "levels": ["level1", "level2"]
+      },
+      "fuel-system": {
+        "id": "fuel-system",
+        "name": "Fuel System Diagram",
+        "url": "images/diagrams/fuel-system.jpg",
+        "description": "Tank, pump, injectors, rails system diagram",
+        "type": "diagram",
+        "size": "500x350",
+        "topic": "fuel-systems",
+        "levels": ["level1", "level2", "level3"]
+      },
+      "electrical-system": {
+        "id": "electrical-system",
+        "name": "Electrical System Diagram",
+        "url": "images/diagrams/electrical-system.jpg",
+        "description": "Battery, alternator, starter interconnections",
+        "type": "diagram",
+        "size": "500x350",
+        "topic": "electrical-systems",
+        "levels": ["level1", "level2"]
+      },
+      "braking-circuit": {
+        "id": "braking-circuit",
+        "name": "Braking Circuit Diagram",
+        "url": "images/diagrams/braking-circuit.jpg",
+        "description": "Master cylinder to wheels braking circuit",
+        "type": "diagram",
+        "size": "500x400",
+        "topic": "braking-systems",
+        "levels": ["level1", "level2"]
+      },
+      "suspension-layout": {
+        "id": "suspension-layout",
+        "name": "Suspension System Layout",
+        "url": "images/diagrams/suspension-layout.jpg",
+        "description": "Springs, dampers, control arms arrangement",
+        "type": "diagram",
+        "size": "500x400",
+        "topic": "suspension-steering",
+        "levels": ["level1", "level2"]
+      }
+    }
+  },
+
+  "searchIndex": {
+    "by-topic": {
+      "4-stroke-engine": ["intake-stroke", "compression-stroke", "power-stroke", "exhaust-stroke", "piston-assembly", "spark-plug", "crankshaft", "connecting-rod", "cylinder-head", "valve-timing-diagram", "turbocharger", "direct-injection"],
+      "electrical-systems": ["battery", "alternator", "starter-motor", "wiring-loom", "fuse-box", "multimeter", "obd-scanner", "can-bus-diagram", "ecm", "lambda-sensor"],
+      "braking-systems": ["disc-brake", "drum-brake", "brake-pads", "brake-rotor", "master-cylinder", "abs-module", "brake-fluid", "brake-hose", "esp-system", "regenerative-braking"],
+      "tools-equipment": ["wrench", "socket-set", "screwdriver", "jack", "torque-wrench", "safety-stand"],
+      "diagrams": ["engine-cross-section", "cooling-system", "fuel-system", "electrical-system", "braking-circuit", "suspension-layout"]
+    },
+    "by-type": {
+      "photo": ["battery", "alternator", "starter-motor", "wiring-loom", "fuse-box", "multimeter", "obd-scanner", "ecm", "lambda-sensor", "disc-brake", "brake-pads", "brake-rotor", "master-cylinder", "abs-module", "brake-fluid", "brake-hose", "piston-assembly", "spark-plug", "connecting-rod", "cylinder-head", "direct-injection", "wrench", "socket-set", "screwdriver", "jack", "torque-wrench", "safety-stand"],
+      "diagram": ["can-bus-diagram", "valve-timing-diagram", "esp-system", "regenerative-braking", "drum-brake", "engine-cross-section", "cooling-system", "fuel-system", "electrical-system", "braking-circuit", "suspension-layout"]
+    },
+    "by-level": {
+      "entry": ["intake-stroke", "compression-stroke", "power-stroke", "exhaust-stroke"],
+      "level1": ["battery", "alternator", "starter-motor", "wiring-loom", "fuse-box", "lambda-sensor", "disc-brake", "drum-brake", "brake-pads", "brake-rotor", "master-cylinder", "brake-fluid", "brake-hose", "piston-assembly", "spark-plug", "crankshaft", "connecting-rod", "cylinder-head", "wrench", "socket-set", "screwdriver", "jack", "safety-stand", "engine-cross-section", "cooling-system", "fuel-system", "electrical-system", "braking-circuit", "suspension-layout"],
+      "level2": ["multimeter", "obd-scanner", "can-bus-diagram", "abs-module", "turbocharger", "direct-injection", "valve-timing-diagram"],
+      "level3": ["ecm", "torque-wrench", "turbocharger", "direct-injection"]
+    }
+  },
+
+  "notes": {
+    "usage_in_cards": "In your card JSON, reference images like this: {\"image_id\": \"battery\"} or {\"image_id\": \"piston-assembly\"}. The application will look up the URL from this bank.",
+    "folder_structure": "Create folder structure: images/4-stroke/, images/electrical/, images/braking/, images/tools/, images/diagrams/",
+    "adding_new_images": "Add new image entries under appropriate category with id, name, url, description, type, size, topic, and levels",
+    "sharing_images": "Same image can be referenced by multiple topics (e.g., tools images used across many topics)",
+    "url_format": "URLs should be relative paths from web root: 'images/category/filename.jpg'",
+    "image_licensing": "Ensure all images have appropriate licensing (CC0, CC-BY, or purchased licenses)"
+  }
+}

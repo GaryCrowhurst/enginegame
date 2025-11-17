@@ -1,0 +1,368 @@
+{
+  "topicId": "electrical-systems",
+  "levels": {
+    "level1": {
+      "name": "Level 1 - Basic Electrical Systems",
+      "pairCount": 6,
+      "description": "Fundamental electrical components",
+      "cards": [
+        {
+          "id": "battery-name",
+          "matchId": "battery",
+          "emoji": "🔋",
+          "title": "BATTERY",
+          "type": "Component",
+          "content": "Power source",
+          "image_url": "images/battery-component.jpg"
+        },
+        {
+          "id": "battery-desc",
+          "matchId": "battery",
+          "emoji": "⚡",
+          "title": "Function",
+          "type": "Component",
+          "content": "Stores electrical energy Provides starting power",
+          "image_url": "images/battery-component.jpg"
+        },
+        {
+          "id": "alternator-name",
+          "matchId": "alternator",
+          "emoji": "⚙️",
+          "title": "ALTERNATOR",
+          "type": "Component",
+          "content": "Power generator",
+          "image_url": "images/alternator-component.jpg"
+        },
+        {
+          "id": "alternator-desc",
+          "matchId": "alternator",
+          "emoji": "🔄",
+          "title": "Function",
+          "type": "Component",
+          "content": "Generates electricity Charges battery Runs electrical systems",
+          "image_url": "images/alternator-component.jpg"
+        },
+        {
+          "id": "starter-name",
+          "matchId": "starter",
+          "emoji": "🚀",
+          "title": "STARTER MOTOR",
+          "type": "Component",
+          "content": "Engine ignition",
+          "image_url": "images/starter-component.jpg"
+        },
+        {
+          "id": "starter-desc",
+          "matchId": "starter",
+          "emoji": "🔧",
+          "title": "Function",
+          "type": "Component",
+          "content": "Cranks engine for starting Uses battery power",
+          "image_url": "images/starter-component.jpg"
+        },
+        {
+          "id": "headlight-name",
+          "matchId": "headlight",
+          "emoji": "💡",
+          "title": "HEADLIGHT",
+          "type": "Component",
+          "content": "Front lighting",
+          "image_url": "images/headlight-component.jpg"
+        },
+        {
+          "id": "headlight-desc",
+          "matchId": "headlight",
+          "emoji": "🌙",
+          "title": "Function",
+          "type": "Component",
+          "content": "Illuminates road ahead Safety lighting",
+          "image_url": "images/headlight-component.jpg"
+        },
+        {
+          "id": "wiring-name",
+          "matchId": "wiring",
+          "emoji": "🔗",
+          "title": "WIRING HARNESS",
+          "type": "Component",
+          "content": "Electrical connections",
+          "image_url": "images/wiring-component.jpg"
+        },
+        {
+          "id": "wiring-desc",
+          "matchId": "wiring",
+          "emoji": "📍",
+          "title": "Function",
+          "type": "Component",
+          "content": "Connects all electrical components Transmits power and signals",
+          "image_url": "images/wiring-component.jpg"
+        }
+      ]
+    },
+    "level2": {
+      "name": "Level 2 - Advanced Electrical Systems",
+      "pairCount": 10,
+      "description": "Complex electrical circuits and diagnostics",
+      "cards": [
+        {
+          "id": "ecm-name",
+          "matchId": "ecm",
+          "emoji": "🖥️",
+          "title": "ECM - Engine Control Module",
+          "type": "Component",
+          "content": "Main computer",
+          "image_url": "images/ecm-component.jpg"
+        },
+        {
+          "id": "ecm-desc",
+          "matchId": "ecm",
+          "emoji": "⚙️",
+          "title": "Function",
+          "type": "Component",
+          "content": "Controls engine operation Manages fuel injection Optimizes performance",
+          "image_url": "images/ecm-component.jpg"
+        },
+        {
+          "id": "can-bus",
+          "matchId": "canbus",
+          "emoji": "🔄",
+          "title": "CAN BUS",
+          "type": "System",
+          "content": "Data network",
+          "image_url": "images/canbus-system.jpg"
+        },
+        {
+          "id": "can-bus-desc",
+          "matchId": "canbus",
+          "emoji": "📡",
+          "title": "Purpose",
+          "type": "System",
+          "content": "Connects all modules Transmits diagnostic data High-speed communication",
+          "image_url": "images/canbus-system.jpg"
+        },
+        {
+          "id": "relay-name",
+          "matchId": "relay",
+          "emoji": "🔌",
+          "title": "RELAY",
+          "type": "Component",
+          "content": "Electrical switch",
+          "image_url": "images/relay-component.jpg"
+        },
+        {
+          "id": "relay-desc",
+          "matchId": "relay",
+          "emoji": "💫",
+          "title": "Function",
+          "type": "Component",
+          "content": "Switches high power circuits Controls fan motors Protective device",
+          "image_url": "images/relay-component.jpg"
+        },
+        {
+          "id": "fuse-name",
+          "matchId": "fuse",
+          "emoji": "⚡",
+          "title": "FUSE",
+          "type": "Component",
+          "content": "Circuit protection",
+          "image_url": "images/fuse-component.jpg"
+        },
+        {
+          "id": "fuse-desc",
+          "matchId": "fuse",
+          "emoji": "🔒",
+          "title": "Function",
+          "type": "Component",
+          "content": "Protects wiring Breaks circuit on overload Replaceable safety device",
+          "image_url": "images/fuse-component.jpg"
+        },
+        {
+          "id": "sensor-name",
+          "matchId": "sensor",
+          "emoji": "📊",
+          "title": "SENSOR",
+          "type": "Component",
+          "content": "Data detection",
+          "image_url": "images/sensor-component.jpg"
+        },
+        {
+          "id": "sensor-desc",
+          "matchId": "sensor",
+          "emoji": "🎯",
+          "title": "Function",
+          "type": "Component",
+          "content": "Monitors engine conditions Sends data to ECM Provides feedback",
+          "image_url": "images/sensor-component.jpg"
+        },
+        {
+          "id": "ground-name",
+          "matchId": "ground",
+          "emoji": "🔌",
+          "title": "GROUND CONNECTION",
+          "type": "Component",
+          "content": "Return path",
+          "image_url": "images/ground-component.jpg"
+        },
+        {
+          "id": "ground-desc",
+          "matchId": "ground",
+          "emoji": "📍",
+          "title": "Importance",
+          "type": "Component",
+          "content": "Completes electrical circuit Essential for all systems Safety critical",
+          "image_url": "images/ground-component.jpg"
+        },
+        {
+          "id": "charging-system",
+          "matchId": "charge",
+          "emoji": "🔋",
+          "title": "CHARGING SYSTEM",
+          "type": "System",
+          "content": "Voltage regulation",
+          "image_url": "images/charge-system.jpg"
+        },
+        {
+          "id": "charging-system-desc",
+          "matchId": "charge",
+          "emoji": "⚙️",
+          "title": "Operation",
+          "type": "System",
+          "content": "Alternator charges battery Regulator controls output Maintains voltage",
+          "image_url": "images/charge-system.jpg"
+        },
+        {
+          "id": "starting-system",
+          "matchId": "start",
+          "emoji": "🚀",
+          "title": "STARTING SYSTEM",
+          "type": "System",
+          "content": "Engine cranking",
+          "image_url": "images/start-system.jpg"
+        },
+        {
+          "id": "starting-system-desc",
+          "matchId": "start",
+          "emoji": "⚡",
+          "title": "Operation",
+          "type": "System",
+          "content": "Battery powers starter High current draw Solenoid engages pinion",
+          "image_url": "images/start-system.jpg"
+        }
+      ]
+    },
+    "level3": {
+      "name": "Level 3 - Expert Electrical Diagnostics",
+      "pairCount": 12,
+      "description": "Advanced diagnostics and system integration",
+      "cards": [
+        {
+          "id": "dtc-name",
+          "matchId": "dtc",
+          "emoji": "🔍",
+          "title": "DTC - Diagnostic Trouble Code",
+          "type": "Concept",
+          "content": "Error identification",
+          "image_url": "images/dtc-concept.jpg"
+        },
+        {
+          "id": "dtc-desc",
+          "matchId": "dtc",
+          "emoji": "📋",
+          "title": "Function",
+          "type": "Concept",
+          "content": "Identifies system faults Stored in ECM P-codes B-codes U-codes",
+          "image_url": "images/dtc-concept.jpg"
+        },
+        {
+          "id": "obd-name",
+          "matchId": "obd",
+          "emoji": "🖥️",
+          "title": "OBD-II",
+          "type": "System",
+          "content": "Diagnostic standard",
+          "image_url": "images/obd-system.jpg"
+        },
+        {
+          "id": "obd-desc",
+          "matchId": "obd",
+          "emoji": "📊",
+          "title": "Purpose",
+          "type": "System",
+          "content": "Standardized diagnostics Scan tool compatible Emissions monitoring",
+          "image_url": "images/obd-system.jpg"
+        },
+        {
+          "id": "can-protocol",
+          "matchId": "canproto",
+          "emoji": "📡",
+          "title": "CAN PROTOCOL",
+          "type": "System",
+          "content": "Communication standard",
+          "image_url": "images/canproto-system.jpg"
+        },
+        {
+          "id": "can-protocol-desc",
+          "matchId": "canproto",
+          "emoji": "🔄",
+          "title": "Features",
+          "type": "System",
+          "content": "500 kbps data rate Multi-module network Fault tolerant",
+          "image_url": "images/canproto-system.jpg"
+        },
+        {
+          "id": "pid-name",
+          "matchId": "pid",
+          "emoji": "📊",
+          "title": "PID - Parameter ID",
+          "type": "Concept",
+          "content": "Live data display",
+          "image_url": "images/pid-concept.jpg"
+        },
+        {
+          "id": "pid-desc",
+          "matchId": "pid",
+          "emoji": "📈",
+          "title": "Usage",
+          "type": "Concept",
+          "content": "Monitors system parameters Engine temp fuel trim Air mass",
+          "image_url": "images/pid-concept.jpg"
+        },
+        {
+          "id": "multiplex-name",
+          "matchId": "multiplex",
+          "emoji": "🔄",
+          "title": "MULTIPLEXED WIRING",
+          "type": "System",
+          "content": "Signal sharing",
+          "image_url": "images/multiplex-system.jpg"
+        },
+        {
+          "id": "multiplex-desc",
+          "matchId": "multiplex",
+          "emoji": "💫",
+          "title": "Benefit",
+          "type": "System",
+          "content": "Reduces wiring complexity Multiple signals one wire Sophisticated control",
+          "image_url": "images/multiplex-system.jpg"
+        },
+        {
+          "id": "bms-name",
+          "matchId": "bms",
+          "emoji": "🔋",
+          "title": "BMS - Battery Management",
+          "type": "System",
+          "content": "Battery protection",
+          "image_url": "images/bms-system.jpg"
+        },
+        {
+          "id": "bms-desc",
+          "matchId": "bms",
+          "emoji": "⚙️",
+          "title": "Function",
+          "type": "System",
+          "content": "Monitors battery health Prevents overcharge Balances cells",
+          "image_url": "images/bms-system.jpg"
+        }
+      ]
+    }
+  }
+}

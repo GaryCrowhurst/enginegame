@@ -1,0 +1,386 @@
+{
+  "topicId": "topic-template",
+  "topicName": "Topic Name",
+  "description": "Brief description of this topic",
+  "levels": {
+    "entry": {
+      "name": "Entry Level 3 - Basic Concepts",
+      "pairCount": 4,
+      "description": "Simple introduction to topic basics",
+      "cards": [
+        {
+          "id": "concept1-name",
+          "matchId": "concept1",
+          "emoji": "🔧",
+          "title": "Concept 1 Name",
+          "type": "Name",
+          "content": "What is Concept 1?",
+          "image_url": "images/concept1-name.jpg"
+        },
+        {
+          "id": "concept1-desc",
+          "matchId": "concept1",
+          "emoji": "📝",
+          "title": "Concept 1 Description",
+          "type": "Description",
+          "content": "Clear explanation of Concept 1",
+          "image_url": "images/concept1-desc.jpg"
+        },
+        {
+          "id": "concept2-name",
+          "matchId": "concept2",
+          "emoji": "⚙️",
+          "title": "Concept 2 Name",
+          "type": "Name",
+          "content": "What is Concept 2?",
+          "image_url": "images/concept2-name.jpg"
+        },
+        {
+          "id": "concept2-desc",
+          "matchId": "concept2",
+          "emoji": "📋",
+          "title": "Concept 2 Description",
+          "type": "Description",
+          "content": "Clear explanation of Concept 2",
+          "image_url": "images/concept2-desc.jpg"
+        }
+      ]
+    },
+    "level1": {
+      "name": "Level 1 - Foundation",
+      "pairCount": 8,
+      "description": "Basic understanding with technical terms",
+      "cards": [
+        {
+          "id": "item1-name",
+          "matchId": "item1",
+          "emoji": "🔴",
+          "title": "Item 1 Name",
+          "type": "Component",
+          "content": "Technical name for Item 1",
+          "image_url": "images/item1-name.jpg"
+        },
+        {
+          "id": "item1-desc",
+          "matchId": "item1",
+          "emoji": "📖",
+          "title": "Item 1 Function",
+          "type": "Description",
+          "content": "What Item 1 does and why it's important",
+          "image_url": "images/item1-function.jpg"
+        },
+        {
+          "id": "item2-name",
+          "matchId": "item2",
+          "emoji": "🟠",
+          "title": "Item 2 Name",
+          "type": "Component",
+          "content": "Technical name for Item 2",
+          "image_url": "images/item2-name.jpg"
+        },
+        {
+          "id": "item2-desc",
+          "matchId": "item2",
+          "emoji": "📖",
+          "title": "Item 2 Function",
+          "type": "Description",
+          "content": "What Item 2 does and why it's important",
+          "image_url": "images/item2-function.jpg"
+        },
+        {
+          "id": "item3-name",
+          "matchId": "item3",
+          "emoji": "🟡",
+          "title": "Item 3 Name",
+          "type": "Component",
+          "content": "Technical name for Item 3",
+          "image_url": "images/item3-name.jpg"
+        },
+        {
+          "id": "item3-desc",
+          "matchId": "item3",
+          "emoji": "📖",
+          "title": "Item 3 Function",
+          "type": "Description",
+          "content": "What Item 3 does and why it's important",
+          "image_url": "images/item3-function.jpg"
+        },
+        {
+          "id": "item4-name",
+          "matchId": "item4",
+          "emoji": "🟢",
+          "title": "Item 4 Name",
+          "type": "Component",
+          "content": "Technical name for Item 4",
+          "image_url": "images/item4-name.jpg"
+        },
+        {
+          "id": "item4-desc",
+          "matchId": "item4",
+          "emoji": "📖",
+          "title": "Item 4 Function",
+          "type": "Description",
+          "content": "What Item 4 does and why it's important",
+          "image_url": "images/item4-function.jpg"
+        }
+      ]
+    },
+    "level2": {
+      "name": "Level 2 - Intermediate",
+      "pairCount": 12,
+      "description": "Advanced understanding with systems and interactions",
+      "cards": [
+        {
+          "id": "system1-term",
+          "matchId": "system1",
+          "emoji": "⚙️",
+          "title": "System 1 Term",
+          "type": "Technical Term",
+          "content": "Formal technical term for System 1",
+          "image_url": "images/system1-term.jpg"
+        },
+        {
+          "id": "system1-explain",
+          "matchId": "system1",
+          "emoji": "🔍",
+          "title": "System 1 Explanation",
+          "type": "Detailed",
+          "content": "How System 1 operates within the wider system",
+          "image_url": "images/system1-explain.jpg"
+        },
+        {
+          "id": "process1-name",
+          "matchId": "process1",
+          "emoji": "🔄",
+          "title": "Process 1",
+          "type": "Process",
+          "content": "Name of Process 1",
+          "image_url": "images/process1.jpg"
+        },
+        {
+          "id": "process1-desc",
+          "matchId": "process1",
+          "emoji": "📊",
+          "title": "Process 1 Details",
+          "type": "Details",
+          "content": "Step-by-step explanation of Process 1",
+          "image_url": "images/process1-details.jpg"
+        },
+        {
+          "id": "fault1-code",
+          "matchId": "fault1",
+          "emoji": "⚠️",
+          "title": "Fault Code",
+          "type": "Diagnostic",
+          "content": "Fault code for Fault 1",
+          "image_url": "images/fault1-code.jpg"
+        },
+        {
+          "id": "fault1-symptom",
+          "matchId": "fault1",
+          "emoji": "🚨",
+          "title": "Fault 1 Symptom",
+          "type": "Diagnostic",
+          "content": "What happens when Fault 1 occurs",
+          "image_url": "images/fault1-symptom.jpg"
+        },
+        {
+          "id": "spec1-param",
+          "matchId": "spec1",
+          "emoji": "📐",
+          "title": "Specification 1",
+          "type": "Technical Spec",
+          "content": "Name of Specification 1",
+          "image_url": "images/spec1-param.jpg"
+        },
+        {
+          "id": "spec1-value",
+          "matchId": "spec1",
+          "emoji": "🎯",
+          "title": "Spec 1 Value/Range",
+          "type": "Technical Spec",
+          "content": "Correct value or range for Specification 1",
+          "image_url": "images/spec1-value.jpg"
+        },
+        {
+          "id": "tool1-name",
+          "matchId": "tool1",
+          "emoji": "🔧",
+          "title": "Tool 1",
+          "type": "Equipment",
+          "content": "Name of Tool 1",
+          "image_url": "images/tool1.jpg"
+        },
+        {
+          "id": "tool1-use",
+          "matchId": "tool1",
+          "emoji": "✋",
+          "title": "Tool 1 Use",
+          "type": "Equipment",
+          "content": "What Tool 1 is used for",
+          "image_url": "images/tool1-use.jpg"
+        },
+        {
+          "id": "material1-name",
+          "matchId": "material1",
+          "emoji": "🏭",
+          "title": "Material 1",
+          "type": "Material",
+          "content": "Name of Material 1",
+          "image_url": "images/material1.jpg"
+        },
+        {
+          "id": "material1-prop",
+          "matchId": "material1",
+          "emoji": "💪",
+          "title": "Material 1 Property",
+          "type": "Material",
+          "content": "Key property or use of Material 1",
+          "image_url": "images/material1-property.jpg"
+        }
+      ]
+    },
+    "level3": {
+      "name": "Level 3 - Advanced",
+      "pairCount": 15,
+      "description": "Expert-level understanding with diagnostics and performance",
+      "cards": [
+        {
+          "id": "theory1-concept",
+          "matchId": "theory1",
+          "emoji": "📚",
+          "title": "Theory 1 Concept",
+          "type": "Theory",
+          "content": "Theoretical concept for Theory 1",
+          "image_url": "images/theory1-concept.jpg"
+        },
+        {
+          "id": "theory1-application",
+          "matchId": "theory1",
+          "emoji": "🔬",
+          "title": "Theory 1 Application",
+          "type": "Theory",
+          "content": "How Theory 1 applies in practice",
+          "image_url": "images/theory1-application.jpg"
+        },
+        {
+          "id": "diag1-procedure",
+          "matchId": "diag1",
+          "emoji": "🔍",
+          "title": "Diagnostic 1 Procedure",
+          "type": "Diagnostic",
+          "content": "Step-by-step diagnostic procedure for Diag 1",
+          "image_url": "images/diag1-procedure.jpg"
+        },
+        {
+          "id": "diag1-interpretation",
+          "matchId": "diag1",
+          "emoji": "📈",
+          "title": "Diagnostic 1 Interpretation",
+          "type": "Diagnostic",
+          "content": "How to interpret results of Diag 1",
+          "image_url": "images/diag1-interpretation.jpg"
+        },
+        {
+          "id": "perf1-metric",
+          "matchId": "perf1",
+          "emoji": "⚡",
+          "title": "Performance 1 Metric",
+          "type": "Performance",
+          "content": "Name of Performance 1 metric",
+          "image_url": "images/perf1-metric.jpg"
+        },
+        {
+          "id": "perf1-optimization",
+          "matchId": "perf1",
+          "emoji": "🚀",
+          "title": "Performance 1 Optimization",
+          "type": "Performance",
+          "content": "How to optimize Performance 1",
+          "image_url": "images/perf1-optimization.jpg"
+        },
+        {
+          "id": "safety1-hazard",
+          "matchId": "safety1",
+          "emoji": "⚠️",
+          "title": "Safety 1 Hazard",
+          "type": "Safety",
+          "content": "Safety hazard or concern for Safety 1",
+          "image_url": "images/safety1-hazard.jpg"
+        },
+        {
+          "id": "safety1-precaution",
+          "matchId": "safety1",
+          "emoji": "🛡️",
+          "title": "Safety 1 Precaution",
+          "type": "Safety",
+          "content": "Precautions to take for Safety 1",
+          "image_url": "images/safety1-precaution.jpg"
+        },
+        {
+          "id": "standard1-name",
+          "matchId": "standard1",
+          "emoji": "📋",
+          "title": "Standard 1",
+          "type": "Standard",
+          "content": "Name of Standard 1 (e.g., ISO, BS, etc.)",
+          "image_url": "images/standard1.jpg"
+        },
+        {
+          "id": "standard1-requirement",
+          "matchId": "standard1",
+          "emoji": "✓",
+          "title": "Standard 1 Requirement",
+          "type": "Standard",
+          "content": "Key requirement of Standard 1",
+          "image_url": "images/standard1-requirement.jpg"
+        },
+        {
+          "id": "advanced1-technique",
+          "matchId": "advanced1",
+          "emoji": "🎓",
+          "title": "Advanced 1 Technique",
+          "type": "Advanced",
+          "content": "Name of Advanced 1 technique",
+          "image_url": "images/advanced1-technique.jpg"
+        },
+        {
+          "id": "advanced1-benefit",
+          "matchId": "advanced1",
+          "emoji": "💡",
+          "title": "Advanced 1 Benefit",
+          "type": "Advanced",
+          "content": "Benefits of using Advanced 1 technique",
+          "image_url": "images/advanced1-benefit.jpg"
+        },
+        {
+          "id": "integration1-component",
+          "matchId": "integration1",
+          "emoji": "🔗",
+          "title": "Integration 1 Component",
+          "type": "System Integration",
+          "content": "Component involved in Integration 1",
+          "image_url": "images/integration1-component.jpg"
+        },
+        {
+          "id": "integration1-interaction",
+          "matchId": "integration1",
+          "emoji": "⚙️",
+          "title": "Integration 1 Interaction",
+          "type": "System Integration",
+          "content": "How components interact in Integration 1",
+          "image_url": "images/integration1-interaction.jpg"
+        },
+        {
+          "id": "emerging1-tech",
+          "matchId": "emerging1",
+          "emoji": "🚀",
+          "title": "Emerging 1 Technology",
+          "type": "Emerging Tech",
+          "content": "Name of Emerging 1 technology",
+          "image_url": "images/emerging1-tech.jpg"
+        }
+      ]
+    }
+  }
+}

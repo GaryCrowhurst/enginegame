@@ -1,0 +1,717 @@
+{
+  "topicId": "4-stroke-engine",
+  "levels": {
+    "entry": {
+      "name": "Entry Level 3 - 4-Stroke Basics",
+      "pairCount": 4,
+      "description": "Simple introduction to the 4 strokes",
+      "cards": [
+        {
+          "id": "intake-name",
+          "matchId": "intake",
+          "emoji": "⬇️",
+          "title": "Stroke 1",
+          "type": "Stroke Name",
+          "content": "⬇️",
+          "image_url": "images/intake-stroke-name.jpg"
+        },
+        {
+          "id": "intake-desc",
+          "matchId": "intake",
+          "emoji": "💨",
+          "title": "What Happens",
+          "type": "Description",
+          "content": "Suck it in! Piston drops Fuel enters",
+          "image_url": "images/intake-description.jpg"
+        },
+        {
+          "id": "comp-name",
+          "matchId": "compression",
+          "emoji": "⬆️",
+          "title": "Stroke 2",
+          "type": "Stroke Name",
+          "content": "⬆️",
+          "image_url": "images/compression-stroke-name.jpg"
+        },
+        {
+          "id": "comp-desc",
+          "matchId": "compression",
+          "emoji": "💪",
+          "title": "What Happens",
+          "type": "Description",
+          "content": "Squeeze it! Gets HOT! All tight!",
+          "image_url": "images/compression-description.jpg"
+        },
+        {
+          "id": "power-name",
+          "matchId": "power",
+          "emoji": "💥",
+          "title": "Stroke 3",
+          "type": "Stroke Name",
+          "content": "💥",
+          "image_url": "images/power-stroke-name.jpg"
+        },
+        {
+          "id": "power-desc",
+          "matchId": "power",
+          "emoji": "⚡",
+          "title": "What Happens",
+          "type": "Description",
+          "content": "KA-BOOM! Explosion! Piston SMASH!",
+          "image_url": "images/power-description.jpg"
+        },
+        {
+          "id": "exhaust-name",
+          "matchId": "exhaust",
+          "emoji": "🌫️",
+          "title": "Stroke 4",
+          "type": "Stroke Name",
+          "content": "🌫️",
+          "image_url": "images/exhaust-stroke-name.jpg"
+        },
+        {
+          "id": "exhaust-desc",
+          "matchId": "exhaust",
+          "emoji": "💨",
+          "title": "What Happens",
+          "type": "Description",
+          "content": "Push it out! Waste escapes Clear clean",
+          "image_url": "images/exhaust-description.jpg"
+        }
+      ]
+    },
+    "level1": {
+      "name": "Level 1 - 4-Stroke Details",
+      "pairCount": 8,
+      "description": "Detailed understanding of strokes and components",
+      "cards": [
+        {
+          "id": "intake-name",
+          "matchId": "intake",
+          "emoji": "⬇️",
+          "title": "INTAKE STROKE",
+          "type": "Stroke",
+          "content": "Piston DOWN",
+          "image_url": "images/intake-stroke.jpg"
+        },
+        {
+          "id": "intake-desc",
+          "matchId": "intake",
+          "emoji": "💨",
+          "title": "What Happens",
+          "type": "Description",
+          "content": "Inlet valve opens Air-fuel mixture enters cylinder",
+          "image_url": "images/intake-description.jpg"
+        },
+        {
+          "id": "comp-name",
+          "matchId": "compression",
+          "emoji": "⬆️",
+          "title": "COMPRESSION",
+          "type": "Stroke",
+          "content": "Piston UP",
+          "image_url": "images/compression-stroke.jpg"
+        },
+        {
+          "id": "comp-desc",
+          "matchId": "compression",
+          "emoji": "💪",
+          "title": "What Happens",
+          "type": "Description",
+          "content": "Both valves close Mixture compressed Temperature rises",
+          "image_url": "images/compression-description.jpg"
+        },
+        {
+          "id": "power-name",
+          "matchId": "power",
+          "emoji": "💥",
+          "title": "POWER STROKE",
+          "type": "Stroke",
+          "content": "Piston DOWN",
+          "image_url": "images/power-stroke.jpg"
+        },
+        {
+          "id": "power-desc",
+          "matchId": "power",
+          "emoji": "⚡",
+          "title": "What Happens",
+          "type": "Description",
+          "content": "Spark plug fires Explosion occurs Piston forced down",
+          "image_url": "images/power-description.jpg"
+        },
+        {
+          "id": "exhaust-name",
+          "matchId": "exhaust",
+          "emoji": "🌫️",
+          "title": "EXHAUST STROKE",
+          "type": "Stroke",
+          "content": "Piston UP",
+          "image_url": "images/exhaust-stroke.jpg"
+        },
+        {
+          "id": "exhaust-desc",
+          "matchId": "exhaust",
+          "emoji": "💨",
+          "title": "What Happens",
+          "type": "Description",
+          "content": "Exhaust valve opens Waste gases pushed out",
+          "image_url": "images/exhaust-description.jpg"
+        },
+        {
+          "id": "piston-name",
+          "matchId": "piston",
+          "emoji": "🔧",
+          "title": "PISTON",
+          "type": "Component",
+          "content": "Seals cylinder",
+          "image_url": "images/piston-component.jpg"
+        },
+        {
+          "id": "piston-desc",
+          "matchId": "piston",
+          "emoji": "↕️",
+          "title": "Function",
+          "type": "Component",
+          "content": "Moves up and down Transfers force to connecting rod",
+          "image_url": "images/piston-component.jpg"
+        },
+        {
+          "id": "spark-name",
+          "matchId": "spark",
+          "emoji": "⚡",
+          "title": "SPARK PLUG",
+          "type": "Component",
+          "content": "Ignites fuel",
+          "image_url": "images/spark-component.jpg"
+        },
+        {
+          "id": "spark-desc",
+          "matchId": "spark",
+          "emoji": "🔥",
+          "title": "Function",
+          "type": "Component",
+          "content": "Creates electric spark to ignite air-fuel mix",
+          "image_url": "images/spark-component.jpg"
+        },
+        {
+          "id": "crank-name",
+          "matchId": "crank",
+          "emoji": "⚙️",
+          "title": "CRANKSHAFT",
+          "type": "Component",
+          "content": "Rotates engine",
+          "image_url": "images/crank-component.jpg"
+        },
+        {
+          "id": "crank-desc",
+          "matchId": "crank",
+          "emoji": "🔄",
+          "title": "Function",
+          "type": "Component",
+          "content": "Converts linear motion to rotary power output",
+          "image_url": "images/crank-component.jpg"
+        },
+        {
+          "id": "conrod-name",
+          "matchId": "conrod",
+          "emoji": "🔗",
+          "title": "CONNECTING ROD",
+          "type": "Component",
+          "content": "Links piston",
+          "image_url": "images/conrod-component.jpg"
+        },
+        {
+          "id": "conrod-desc",
+          "matchId": "conrod",
+          "emoji": "↔️",
+          "title": "Function",
+          "type": "Component",
+          "content": "Connects piston to crankshaft Transfers power",
+          "image_url": "images/conrod-component.jpg"
+        }
+      ]
+    },
+    "level2": {
+      "name": "Level 2 - Advanced Engine Systems",
+      "pairCount": 12,
+      "description": "Technical understanding with diagnostics",
+      "cards": [
+        {
+          "id": "intake-valve",
+          "matchId": "intake-v",
+          "emoji": "🟢",
+          "title": "INTAKE VALVE",
+          "type": "Valve",
+          "content": "Opens during INTAKE",
+          "image_url": "images/intake-v-valve.jpg"
+        },
+        {
+          "id": "intake-valve-desc",
+          "matchId": "intake-v",
+          "emoji": "📥",
+          "title": "Operation",
+          "type": "Valve",
+          "content": "Allows air-fuel mixture entry Seals exhaust",
+          "image_url": "images/intake-v-valve.jpg"
+        },
+        {
+          "id": "exhaust-valve",
+          "matchId": "exhaust-v",
+          "emoji": "🔴",
+          "title": "EXHAUST VALVE",
+          "type": "Valve",
+          "content": "Opens during EXHAUST",
+          "image_url": "images/exhaust-v-valve.jpg"
+        },
+        {
+          "id": "exhaust-valve-desc",
+          "matchId": "exhaust-v",
+          "emoji": "📤",
+          "title": "Operation",
+          "type": "Valve",
+          "content": "Expels burnt gases Prevents backflow Maintains sealing",
+          "image_url": "images/exhaust-v-valve.jpg"
+        },
+        {
+          "id": "camshaft-name",
+          "matchId": "camshaft",
+          "emoji": "🎯",
+          "title": "CAMSHAFT",
+          "type": "Component",
+          "content": "Controls timing",
+          "image_url": "images/camshaft-component.jpg"
+        },
+        {
+          "id": "camshaft-desc",
+          "matchId": "camshaft",
+          "emoji": "⏱️",
+          "title": "Function",
+          "type": "Component",
+          "content": "Opens closes valves at precise timing Optimizes performance",
+          "image_url": "images/camshaft-component.jpg"
+        },
+        {
+          "id": "cylinder-name",
+          "matchId": "cylinder",
+          "emoji": "🏗️",
+          "title": "CYLINDER",
+          "type": "Component",
+          "content": "Combustion chamber",
+          "image_url": "images/cylinder-component.jpg"
+        },
+        {
+          "id": "cylinder-desc",
+          "matchId": "cylinder",
+          "emoji": "🔲",
+          "title": "Function",
+          "type": "Component",
+          "content": "Houses piston Contains combustion Weathers high temp",
+          "image_url": "images/cylinder-component.jpg"
+        },
+        {
+          "id": "intake-manifold",
+          "matchId": "intake-mani",
+          "emoji": "🌬️",
+          "title": "INTAKE MANIFOLD",
+          "type": "Component",
+          "content": "Distributes fuel",
+          "image_url": "images/intake-mani-component.jpg"
+        },
+        {
+          "id": "intake-manifold-desc",
+          "matchId": "intake-mani",
+          "emoji": "🔀",
+          "title": "Function",
+          "type": "Component",
+          "content": "Routes air-fuel mix to cylinders evenly Optimizes flow",
+          "image_url": "images/intake-mani-component.jpg"
+        },
+        {
+          "id": "exhaust-manifold",
+          "matchId": "exhaust-mani",
+          "emoji": "🌫️",
+          "title": "EXHAUST MANIFOLD",
+          "type": "Component",
+          "content": "Collects exhaust",
+          "image_url": "images/exhaust-mani-component.jpg"
+        },
+        {
+          "id": "exhaust-manifold-desc",
+          "matchId": "exhaust-mani",
+          "emoji": "🔀",
+          "title": "Function",
+          "type": "Component",
+          "content": "Gathers burned gas from all cylinders Feeds to exhaust system",
+          "image_url": "images/exhaust-mani-component.jpg"
+        },
+        {
+          "id": "valve-timing",
+          "matchId": "valve-time",
+          "emoji": "⏰",
+          "title": "VALVE TIMING",
+          "type": "Concept",
+          "content": "Opening closing schedule",
+          "image_url": "images/valve-time-concept.jpg"
+        },
+        {
+          "id": "valve-timing-desc",
+          "matchId": "valve-time",
+          "emoji": "📊",
+          "title": "Importance",
+          "type": "Concept",
+          "content": "Controls engine performance efficiency Measured in degrees",
+          "image_url": "images/valve-time-concept.jpg"
+        },
+        {
+          "id": "compression-ratio",
+          "matchId": "compression-r",
+          "emoji": "📈",
+          "title": "COMPRESSION RATIO",
+          "type": "Concept",
+          "content": "Volume measurement",
+          "image_url": "images/compression-r-concept.jpg"
+        },
+        {
+          "id": "compression-ratio-desc",
+          "matchId": "compression-r",
+          "emoji": "🔢",
+          "title": "Definition",
+          "type": "Concept",
+          "content": "Ratio of max to min volume in cylinder Affects power output",
+          "image_url": "images/compression-r-concept.jpg"
+        },
+        {
+          "id": "tdc-name",
+          "matchId": "tdc",
+          "emoji": "📍",
+          "title": "TDC (Top Dead Center)",
+          "type": "Position",
+          "content": "Highest piston point",
+          "image_url": "images/tdc-position.jpg"
+        },
+        {
+          "id": "tdc-desc",
+          "matchId": "tdc",
+          "emoji": "🎯",
+          "title": "Significance",
+          "type": "Position",
+          "content": "Reference point for timing diagnostics Used in all strokes",
+          "image_url": "images/tdc-position.jpg"
+        },
+        {
+          "id": "bdc-name",
+          "matchId": "bdc",
+          "emoji": "📍",
+          "title": "BDC (Bottom Dead Center)",
+          "type": "Position",
+          "content": "Lowest piston point",
+          "image_url": "images/bdc-position.jpg"
+        },
+        {
+          "id": "bdc-desc",
+          "matchId": "bdc",
+          "emoji": "🎯",
+          "title": "Significance",
+          "type": "Position",
+          "content": "Maximum cylinder volume point End of intake stroke",
+          "image_url": "images/bdc-position.jpg"
+        },
+        {
+          "id": "bore-name",
+          "matchId": "bore",
+          "emoji": "⌀",
+          "title": "BORE",
+          "type": "Measurement",
+          "content": "Cylinder diameter",
+          "image_url": "images/bore-measurement.jpg"
+        },
+        {
+          "id": "bore-desc",
+          "matchId": "bore",
+          "emoji": "🔍",
+          "title": "Importance",
+          "type": "Measurement",
+          "content": "Affects displacement Influences power Key engine spec",
+          "image_url": "images/bore-measurement.jpg"
+        },
+        {
+          "id": "stroke-measure",
+          "matchId": "stroke-meas",
+          "emoji": "↕️",
+          "title": "STROKE LENGTH",
+          "type": "Measurement",
+          "content": "Piston travel distance",
+          "image_url": "images/stroke-meas-measurement.jpg"
+        },
+        {
+          "id": "stroke-measure-desc",
+          "matchId": "stroke-meas",
+          "emoji": "🔍",
+          "title": "Importance",
+          "type": "Measurement",
+          "content": "Affects displacement Influences torque Key engine spec",
+          "image_url": "images/stroke-meas-measurement.jpg"
+        }
+      ]
+    },
+    "level3": {
+      "name": "Level 3 - Expert Diagnostics",
+      "pairCount": 14,
+      "description": "Advanced systems with diagnostics and performance tuning",
+      "cards": [
+        {
+          "id": "vvt-name",
+          "matchId": "vvt",
+          "emoji": "🔄",
+          "title": "VVT SYSTEM",
+          "type": "Technology",
+          "content": "Variable Valve Timing",
+          "image_url": "images/vvt-technology.jpg"
+        },
+        {
+          "id": "vvt-desc",
+          "matchId": "vvt",
+          "emoji": "🎯",
+          "title": "Function",
+          "type": "Technology",
+          "content": "Adjusts timing electronically Optimizes power efficiency Reduces emissions",
+          "image_url": "images/vvt-technology.jpg"
+        },
+        {
+          "id": "vvl-name",
+          "matchId": "vvl",
+          "emoji": "📊",
+          "title": "VVL SYSTEM",
+          "type": "Technology",
+          "content": "Variable Valve Lift",
+          "image_url": "images/vvl-technology.jpg"
+        },
+        {
+          "id": "vvl-desc",
+          "matchId": "vvl",
+          "emoji": "🎯",
+          "title": "Function",
+          "type": "Technology",
+          "content": "Controls valve opening height Matches load conditions Improves efficiency",
+          "image_url": "images/vvl-technology.jpg"
+        },
+        {
+          "id": "atkinson-name",
+          "matchId": "atkinson",
+          "emoji": "🔄",
+          "title": "ATKINSON CYCLE",
+          "type": "Concept",
+          "content": "Modified combustion",
+          "image_url": "images/atkinson-concept.jpg"
+        },
+        {
+          "id": "atkinson-desc",
+          "matchId": "atkinson",
+          "emoji": "📈",
+          "title": "Operation",
+          "type": "Concept",
+          "content": "Intake valve stays open into compression Better efficiency",
+          "image_url": "images/atkinson-concept.jpg"
+        },
+        {
+          "id": "knock-detection",
+          "matchId": "knock-detect",
+          "emoji": "🎙️",
+          "title": "KNOCK SENSOR",
+          "type": "Sensor",
+          "content": "Detects detonation",
+          "image_url": "images/knock-detect-sensor.jpg"
+        },
+        {
+          "id": "knock-detection-desc",
+          "matchId": "knock-detect",
+          "emoji": "⚠️",
+          "title": "Function",
+          "type": "Sensor",
+          "content": "Monitors pre-ignition Adjusts timing fuel Protects engine",
+          "image_url": "images/knock-detect-sensor.jpg"
+        },
+        {
+          "id": "lambda-sensor",
+          "matchId": "lambda",
+          "emoji": "🌬️",
+          "title": "LAMBDA SENSOR",
+          "type": "Sensor",
+          "content": "Oxygen measurement",
+          "image_url": "images/lambda-sensor.jpg"
+        },
+        {
+          "id": "lambda-sensor-desc",
+          "matchId": "lambda",
+          "emoji": "📊",
+          "title": "Function",
+          "type": "Sensor",
+          "content": "Measures O2 in exhaust Optimizes fuel ratio Reduces emissions",
+          "image_url": "images/lambda-sensor.jpg"
+        },
+        {
+          "id": "thermostatic",
+          "matchId": "thermo",
+          "emoji": "🌡️",
+          "title": "THERMOSTAT",
+          "type": "Component",
+          "content": "Temperature control",
+          "image_url": "images/thermo-component.jpg"
+        },
+        {
+          "id": "thermostatic-desc",
+          "matchId": "thermo",
+          "emoji": "🎚️",
+          "title": "Function",
+          "type": "Component",
+          "content": "Maintains operating temp Optimizes efficiency Protects engine",
+          "image_url": "images/thermo-component.jpg"
+        },
+        {
+          "id": "combustion-chamber",
+          "matchId": "comb-chamber",
+          "emoji": "🔥",
+          "title": "COMBUSTION CHAMBER",
+          "type": "Area",
+          "content": "Combustion space",
+          "image_url": "images/comb-chamber-area.jpg"
+        },
+        {
+          "id": "combustion-chamber-desc",
+          "matchId": "comb-chamber",
+          "emoji": "💥",
+          "title": "Design",
+          "type": "Area",
+          "content": "Shape affects burn rate Influences efficiency Designed for turbulence",
+          "image_url": "images/comb-chamber-area.jpg"
+        },
+        {
+          "id": "turbo-name",
+          "matchId": "turbo",
+          "emoji": "🌪️",
+          "title": "TURBOCHARGER",
+          "type": "Technology",
+          "content": "Boosts intake air",
+          "image_url": "images/turbo-technology.jpg"
+        },
+        {
+          "id": "turbo-desc",
+          "matchId": "turbo",
+          "emoji": "💨",
+          "title": "Operation",
+          "type": "Technology",
+          "content": "Uses exhaust energy Compresses intake air Increases power output",
+          "image_url": "images/turbo-technology.jpg"
+        },
+        {
+          "id": "supercharger",
+          "matchId": "super",
+          "emoji": "⚙️",
+          "title": "SUPERCHARGER",
+          "type": "Technology",
+          "content": "Mechanical compression",
+          "image_url": "images/super-technology.jpg"
+        },
+        {
+          "id": "supercharger-desc",
+          "matchId": "super",
+          "emoji": "💪",
+          "title": "Operation",
+          "type": "Technology",
+          "content": "Belt-driven compressor Increases air density Raises boost pressure",
+          "image_url": "images/super-technology.jpg"
+        },
+        {
+          "id": "direct-injection",
+          "matchId": "di",
+          "emoji": "💧",
+          "title": "DIRECT INJECTION",
+          "type": "System",
+          "content": "Fuel delivery method",
+          "image_url": "images/di-system.jpg"
+        },
+        {
+          "id": "direct-injection-desc",
+          "matchId": "di",
+          "emoji": "🎯",
+          "title": "Advantages",
+          "type": "System",
+          "content": "Precise fuel control Improved efficiency Better combustion",
+          "image_url": "images/di-system.jpg"
+        },
+        {
+          "id": "swirl-squish",
+          "matchId": "swirl",
+          "emoji": "🌀",
+          "title": "SWIRL & SQUISH",
+          "type": "Motion",
+          "content": "Air motion patterns",
+          "image_url": "images/swirl-motion.jpg"
+        },
+        {
+          "id": "swirl-squish-desc",
+          "matchId": "swirl",
+          "emoji": "🔄",
+          "title": "Purpose",
+          "type": "Motion",
+          "content": "Improves air-fuel mixing Optimizes combustion Enhances efficiency",
+          "image_url": "images/swirl-motion.jpg"
+        },
+        {
+          "id": "scavenging",
+          "matchId": "scav",
+          "emoji": "🧹",
+          "title": "SCAVENGING",
+          "type": "Process",
+          "content": "Exhaust gas removal",
+          "image_url": "images/scav-process.jpg"
+        },
+        {
+          "id": "scavenging-desc",
+          "matchId": "scav",
+          "emoji": "💨",
+          "title": "Importance",
+          "type": "Process",
+          "content": "Removes burnt gases Prepares for intake Affects efficiency",
+          "image_url": "images/scav-process.jpg"
+        },
+        {
+          "id": "egr-system",
+          "matchId": "egr",
+          "emoji": "♻️",
+          "title": "EGR SYSTEM",
+          "type": "Emissions",
+          "content": "Recirculates exhaust",
+          "image_url": "images/egr-emissions.jpg"
+        },
+        {
+          "id": "egr-system-desc",
+          "matchId": "egr",
+          "emoji": "📉",
+          "title": "Function",
+          "type": "Emissions",
+          "content": "Routes exhaust back Reduces NOx emissions Lowers combustion temp",
+          "image_url": "images/egr-emissions.jpg"
+        },
+        {
+          "id": "resonance-tuning",
+          "matchId": "resonance",
+          "emoji": "🎵",
+          "title": "RESONANCE TUNING",
+          "type": "Technology",
+          "content": "Intake tuning",
+          "image_url": "images/resonance-technology.jpg"
+        },
+        {
+          "id": "resonance-tuning-desc",
+          "matchId": "resonance",
+          "emoji": "📈",
+          "title": "Effect",
+          "type": "Technology",
+          "content": "Uses intake wave effects Optimizes filling Increases power",
+          "image_url": "images/resonance-technology.jpg"
+        }
+      ]
+    }
+  }
+}
