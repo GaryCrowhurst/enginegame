@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-Stroke Engine Master Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .game-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .mode-selection {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .mode-selection h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .difficulty-selection {
+            margin: 30px 0;
+        }
+
+        .difficulty-selection h3 {
+            color: #764ba2;
+            margin-bottom: 15px;
+        }
+
+        .difficulty-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .diff-btn {
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border: 3px solid #667eea;
+            border-radius: 10px;
+            cursor: pointer;
+            background: white;
+            color: #667eea;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .diff-btn.selected {
+            background: #667eea;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .mode-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .mode-btn {
+            padding: 20px 40px;
+            font-size: 1.3em;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .mode-btn.two-player {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .mode-btn.group-mode {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+        }
+
+        .mode-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .game-board {
+            display: none;
+        }
+
+        .game-board.active {
+            display: block;
+        }
+
+        .scoreboard {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .player-info {
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+
+        .player-info.active {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .player-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .player-score {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .game-info {
+            text-align: center;
+            color: white;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            aspect-ratio: 3/4;
+            position: relative;
+            cursor: pointer;
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .card.flipped .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card.matched {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .card.matched .card-inner {
+            animation: matchPulse 0.5s ease-in-out;
+        }
+
+        @keyframes matchPulse {
+            0%, 100% { transform: scale(1) rotateY(180deg); }
+            50% { transform: scale(1.1) rotateY(180deg); }
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            font-weight: bold;
+        }
+
+        .card-back {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-size: 2.5em;
+        }
+
+        .card-front {
+            background: white;
+            transform: rotateY(180deg);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Stroke Cards */
+        .card-front.stroke-intake {
+            background: linear-gradient(135deg, #FFE6E6 0%, #FFCCCC 100%);
+            border: 4px solid #CC0000;
+        }
+
+        .card-front.stroke-compression {
+            background: linear-gradient(135deg, #FFF4E6 0%, #FFE6CC 100%);
+            border: 4px solid #FF8800;
+        }
+
+        .card-front.stroke-power {
+            background: linear-gradient(135deg, #E6F7E6 0%, #CCF0CC 100%);
+            border: 4px solid #008800;
+        }
+
+        .card-front.stroke-exhaust {
+            background: linear-gradient(135deg, #E6F0FF 0%, #CCE0FF 100%);
+            border: 4px solid #0044CC;
+        }
+
+        /* Component Cards */
+        .card-front.component {
+            background: linear-gradient(135deg, #FFF9E6 0%, #FFEDCC 100%);
+            border: 4px solid #FF6600;
+        }
+
+        /* Valve Cards */
+        .card-front.valve {
+            background: linear-gradient(135deg, #F0E6FF 0%, #E0CCFF 100%);
+            border: 4px solid #9933FF;
+        }
+
+        .card-emoji {
+            font-size: 2.5em;
+            margin-bottom: 8px;
+        }
+
+        .card-title {
+            font-size: 1.3em;
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+
+        .card-type {
+            font-size: 0.85em;
+            opacity: 0.7;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .card-content {
+            font-size: 0.9em;
+            line-height: 1.3;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn-restart {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .btn-menu {
+            background: white;
+            color: #667eea;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .victory-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .victory-modal.active {
+            display: flex;
+        }
+
+        .victory-content {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 500px;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.5);
+            animation: victorySlideIn 0.5s ease-out;
+        }
+
+        @keyframes victorySlideIn {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .victory-content h2 {
+            font-size: 3em;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .victory-content p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .confetti {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: confettiSpin 2s infinite;
+        }
+
+        @keyframes confettiSpin {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .scoreboard {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .card-emoji {
+                font-size: 2em;
+            }
+
+            .card-title {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>🏎️ 4-Stroke Engine Master 🏎️</h1>
+            <p>Match strokes, components, and descriptions!</p>
+        </div>
+
+        <!-- Mode Selection -->
+        <div class="mode-selection" id="modeSelection">
+            <h2>Choose Your Game</h2>
+            
+            <div class="difficulty-selection">
+                <h3>Select Difficulty</h3>
+                <div class="difficulty-buttons">
+                    <button class="diff-btn selected" onclick="selectDifficulty('easy')">
+                        😊 Easy<br><small>(8 pairs - Strokes only)</small>
+                    </button>
+                    <button class="diff-btn" onclick="selectDifficulty('medium')">
+                        🤔 Medium<br><small>(12 pairs - Strokes + Components)</small>
+                    </button>
+                    <button class="diff-btn" onclick="selectDifficulty('hard')">
+                        🔥 Hard<br><small>(16 pairs - Full Engine)</small>
+                    </button>
+                </div>
+            </div>
+
+            <div class="mode-buttons">
+                <button class="mode-btn two-player" onclick="startGame('two-player')">
+                    👥 2 Player Battle
+                </button>
+                <button class="mode-btn group-mode" onclick="startGame('group')">
+                    👨‍👩‍👧‍👦 Group Pairs
+                </button>
+            </div>
+        </div>
+
+        <!-- Game Board -->
+        <div class="game-board" id="gameBoard">
+            <div class="scoreboard" id="scoreboard">
+                <div class="player-info active" id="player1Info">
+                    <div class="player-name">Player 1</div>
+                    <div class="player-score" id="player1Score">0</div>
+                </div>
+                <div class="player-info" id="player2Info">
+                    <div class="player-name">Player 2</div>
+                    <div class="player-score" id="player2Score">0</div>
+                </div>
+            </div>
+
+            <div class="game-info" id="gameInfo">
+                Player 1's Turn - Find matching pairs!
+            </div>
+
+            <div class="cards-grid" id="cardsGrid"></div>
+
+            <div class="action-buttons">
+                <button class="btn btn-restart" onclick="restartGame()">🔄 Restart</button>
+                <button class="btn btn-menu" onclick="backToMenu()">🏠 Menu</button>
+            </div>
+        </div>
+
+        <!-- Victory Modal -->
+        <div class="victory-modal" id="victoryModal">
+            <div class="victory-content">
+                <div class="confetti">🎉🎊🎉</div>
+                <h2 id="victoryTitle">Game Over!</h2>
+                <p id="victoryMessage"></p>
+                <div class="action-buttons">
+                    <button class="btn btn-restart" onclick="restartGame()">Play Again</button>
+                    <button class="btn btn-menu" onclick="backToMenu()">Main Menu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Complete Card Database
+        const allCards = {
+            easy: [
+                // INTAKE STROKE
+                { id: 'intake-name', matchId: 'intake', class: 'stroke-intake', emoji: '⬇️', title: 'INTAKE', type: 'Stroke Name', content: 'First stroke - SUCK' },
+                { id: 'intake-desc', matchId: 'intake', class: 'stroke-intake', emoji: '💨', title: 'INTAKE', type: 'Description', content: 'Air-fuel mixture is SUCKED into cylinder as piston moves DOWN' },
+                
+                // COMPRESSION STROKE
+                { id: 'comp-name', matchId: 'compression', class: 'stroke-compression', emoji: '⬆️', title: 'COMPRESSION', type: 'Stroke Name', content: 'Second stroke - SQUEEZE' },
+                { id: 'comp-desc', matchId: 'compression', class: 'stroke-compression', emoji: '💪', title: 'COMPRESSION', type: 'Description', content: 'Mixture is COMPRESSED and heated as piston moves UP' },
+                
+                // POWER STROKE
+                { id: 'power-name', matchId: 'power', class: 'stroke-power', emoji: '⚡', title: 'POWER', type: 'Stroke Name', content: 'Third stroke - BANG' },
+                { id: 'power-desc', matchId: 'power', class: 'stroke-power', emoji: '💥', title: 'POWER', type: 'Description', content: 'Spark ignites mixture! EXPLOSION pushes piston DOWN' },
+                
+                // EXHAUST STROKE
+                { id: 'exhaust-name', matchId: 'exhaust', class: 'stroke-exhaust', emoji: '🌫️', title: 'EXHAUST', type: 'Stroke Name', content: 'Fourth stroke - BLOW' },
+                { id: 'exhaust-desc', matchId: 'exhaust', class: 'stroke-exhaust', emoji: '🌬️', title: 'EXHAUST', type: 'Description', content: 'Waste gases are PUSHED OUT as piston moves UP' },
+            ],
+            
+            medium: [
+                // INTAKE
+                { id: 'intake-name', matchId: 'intake', class: 'stroke-intake', emoji: '⬇️', title: 'INTAKE', type: 'Stroke', content: 'Piston DOWN\nInlet valve OPEN' },
+                { id: 'intake-desc', matchId: 'intake', class: 'stroke-intake', emoji: '💨', title: 'Description', type: 'What happens', content: 'Air-fuel mixture sucked into cylinder' },
+                
+                // COMPRESSION
+                { id: 'comp-name', matchId: 'compression', class: 'stroke-compression', emoji: '⬆️', title: 'COMPRESSION', type: 'Stroke', content: 'Piston UP\nBoth valves CLOSED' },
+                { id: 'comp-desc', matchId: 'compression', class: 'stroke-compression', emoji: '💪', title: 'Description', type: 'What happens', content: 'Mixture compressed and becomes hot' },
+                
+                // POWER
+                { id: 'power-name', matchId: 'power', class: 'stroke-power', emoji: '💥', title: 'POWER', type: 'Stroke', content: 'Piston DOWN\nBoth valves CLOSED' },
+                { id: 'power-desc', matchId: 'power', class: 'stroke-power', emoji: '⚡', title: 'Description', type: 'What happens', content: 'Spark fires! Explosion pushes piston down' },
+                
+                // EXHAUST
+                { id: 'exhaust-name', matchId: 'exhaust', class: 'stroke-exhaust', emoji: '🌫️', title: 'EXHAUST', type: 'Stroke', content: 'Piston UP\nExhaust valve OPEN' },
+                { id: 'exhaust-desc', matchId: 'exhaust', class: 'stroke-exhaust', emoji: '🌬️', title: 'Description', type: 'What happens', content: 'Waste gases pushed out of cylinder' },
+                
+                // COMPONENTS
+                { id: 'piston-name', matchId: 'piston', class: 'component', emoji: '🔧', title: 'PISTON', type: 'Component', content: 'Moves up and down in cylinder' },
+                { id: 'piston-desc', matchId: 'piston', class: 'component', emoji: '↕️', title: 'Function', type: 'Component', content: 'Transfers force to crankshaft via connecting rod' },
+                
+                { id: 'spark-name', matchId: 'spark', class: 'component', emoji: '⚡', title: 'SPARK PLUG', type: 'Component', content: 'Creates electrical spark' },
+                { id: 'spark-desc', matchId: 'spark', class: 'component', emoji: '🔥', title: 'Function', type: 'Component', content: 'Ignites compressed air-fuel mixture' },
+                
+                { id: 'crank-name', matchId: 'crank', class: 'component', emoji: '⚙️', title: 'CRANKSHAFT', type: 'Component', content: 'Converts linear to rotary motion' },
+                { id: 'crank-desc', matchId: 'crank', class: 'component', emoji: '🔄', title: 'Function', type: 'Component', content: 'Transfers power to wheels via transmission' },
+                
+                { id: 'conrod-name', matchId: 'conrod', class: 'component', emoji: '🔗', title: 'CONNECTING ROD', type: 'Component', content: 'Links piston to crankshaft' },
+                { id: 'conrod-desc', matchId: 'conrod', class: 'component', emoji: '↔️', title: 'Function', type: 'Component', content: 'Transfers force from piston to crankshaft' },
+            ],
+            
+            hard: [
+                // All medium cards plus...
+                { id: 'intake-name', matchId: 'intake', class: 'stroke-intake', emoji: '⬇️', title: 'INTAKE', type: 'Stroke', content: 'Piston DOWN\nInlet valve OPEN' },
+                { id: 'intake-desc', matchId: 'intake', class: 'stroke-intake', emoji: '💨', title: 'Description', type: 'What happens', content: 'Air-fuel mixture sucked into cylinder' },
+                
+                { id: 'comp-name', matchId: 'compression', class: 'stroke-compression', emoji: '⬆️', title: 'COMPRESSION', type: 'Stroke', content: 'Piston UP\nBoth valves CLOSED' },
+                { id: 'comp-desc', matchId: 'compression', class: 'stroke-compression', emoji: '💪', title: 'Description', type: 'What happens', content: 'Mixture compressed and becomes hot' },
+                
+                { id: 'power-name', matchId: 'power', class: 'stroke-power', emoji: '💥', title: 'POWER', type: 'Stroke', content: 'Piston DOWN\nBoth valves CLOSED' },
+                { id: 'power-desc', matchId: 'power', class: 'stroke-power', emoji: '⚡', title: 'Description', type: 'What happens', content: 'Spark fires! Explosion pushes piston down' },
+                
+                { id: 'exhaust-name', matchId: 'exhaust', class: 'stroke-exhaust', emoji: '🌫️', title: 'EXHAUST', type: 'Stroke', content: 'Piston UP\nExhaust valve OPEN' },
+                { id: 'exhaust-desc', matchId: 'exhaust', class: 'stroke-exhaust', emoji: '🌬️', title: 'Description', type: 'What happens', content: 'Waste gases pushed out of cylinder' },
+                
+                { id: 'piston-name', matchId: 'piston', class: 'component', emoji: '🔧', title: 'PISTON', type: 'Component', content: 'Moves up and down' },
+                { id: 'piston-desc', matchId: 'piston', class: 'component', emoji: '↕️', title: 'Function', type: 'Component', content: 'Transfers force to crankshaft' },
+                
+                { id: 'spark-name', matchId: 'spark', class: 'component', emoji: '⚡', title: 'SPARK PLUG', type: 'Component', content: 'Creates spark' },
+                { id: 'spark-desc', matchId: 'spark', class: 'component', emoji: '🔥', title: 'Function', type: 'Component', content: 'Ignites air-fuel mixture' },
+                
+                { id: 'crank-name', matchId: 'crank', class: 'component', emoji: '⚙️', title: 'CRANKSHAFT', type: 'Component', content: 'Rotary motion' },
+                { id: 'crank-desc', matchId: 'crank', class: 'component', emoji: '🔄', title: 'Function', type: 'Component', content: 'Transfers power to transmission' },
+                
+                { id: 'conrod-name', matchId: 'conrod', class: 'component', emoji: '🔗', title: 'CONNECTING ROD', type: 'Component', content: 'Links piston to crank' },
+                { id: 'conrod-desc', matchId: 'conrod', class: 'component', emoji: '↔️', title: 'Function', type: 'Component', content: 'Transfers piston force' },
+                
+                // VALVE TIMING
+                { id: 'intake-valve', matchId: 'intake-v', class: 'valve', emoji: '🟢', title: 'INTAKE VALVE', type: 'Valve', content: 'Opens during INTAKE stroke' },
+                { id: 'intake-valve-desc', matchId: 'intake-v', class: 'valve', emoji: '📥', title: 'Function', type: 'Valve', content: 'Allows air-fuel mixture to enter' },
+                
+                { id: 'exhaust-valve', matchId: 'exhaust-v', class: 'valve', emoji: '🔴', title: 'EXHAUST VALVE', type: 'Valve', content: 'Opens during EXHAUST stroke' },
+                { id: 'exhaust-valve-desc', matchId: 'exhaust-v', class: 'valve', emoji: '📤', title: 'Function', type: 'Valve', content: 'Allows waste gases to exit' },
+                
+                { id: 'camshaft-name', matchId: 'camshaft', class: 'component', emoji: '🎯', title: 'CAMSHAFT', type: 'Component', content: 'Controls valve timing' },
+                { id: 'camshaft-desc', matchId: 'camshaft', class: 'component', emoji: '⏱️', title: 'Function', type: 'Component', content: 'Opens and closes valves at correct time' },
+                
+                { id: 'cylinder-name', matchId: 'cylinder', class: 'component', emoji: '🏗️', title: 'CYLINDER', type: 'Component', content: 'Houses the piston' },
+                { id: 'cylinder-desc', matchId: 'cylinder', class: 'component', emoji: '🔲', title: 'Function', type: 'Component', content: 'Provides space for combustion' },
+            ]
+        };
+
+        // Game State
+        let gameMode = '';
+        let difficulty = 'easy';
+        let currentPlayer = 1;
+        let scores = { player1: 0, player2: 0 };
+        let flippedCards = [];
+        let matchedPairs = 0;
+        let gameCards = [];
+        let totalPairs = 0;
+
+        function selectDifficulty(level) {
+            difficulty = level;
+            document.querySelectorAll('.diff-btn').forEach(btn => btn.classList.remove('selected'));
+            event.target.closest('.diff-btn').classList.add('selected');
+        }
+
+        function startGame(mode) {
+            gameMode = mode;
+            document.getElementById('modeSelection').style.display = 'none';
+            document.getElementById('gameBoard').classList.add('active');
+            
+            if (mode === 'group') {
+                document.getElementById('player1Info').querySelector('.player-name').textContent = 'Team 1';
+                document.getElementById('player2Info').querySelector('.player-name').textContent = 'Team 2';
+            }
+            
+            initializeGame();
+        }
+
+        function initializeGame() {
+            currentPlayer = 1;
+            scores = { player1: 0, player2: 0 };
+            flippedCards = [];
+            matchedPairs = 0;
+            
+            // Get cards for selected difficulty
+            gameCards = shuffleArray([...allCards[difficulty]]);
+            totalPairs = gameCards.length / 2;
+            
+            updateScoreboard();
+            renderCards();
+        }
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        function renderCards() {
+            const grid = document.getElementById('cardsGrid');
+            grid.innerHTML = '';
+            
+            gameCards.forEach((card, index) => {
+                const cardElement = document.createElement('div');
+                cardElement.className = 'card';
+                cardElement.dataset.index = index;
+                cardElement.dataset.matchId = card.matchId;
+                
+                cardElement.innerHTML = `
+                    <div class="card-inner">
+                        <div class="card-face card-back">🏎️</div>
+                        <div class="card-face card-front ${card.class}">
+                            <div class="card-emoji">${card.emoji}</div>
+                            <div class="card-title">${card.title}</div>
+                            <div class="card-type">${card.type}</div>
+                            <div class="card-content">${card.content.replace(/\n/g, '<br>')}</div>
+                        </div>
+                    </div>
+                `;
+                
+                cardElement.addEventListener('click', () => flipCard(index));
+                grid.appendChild(cardElement);
+            });
+        }
+
+        function flipCard(index) {
+            const cardElement = document.querySelectorAll('.card')[index];
+            
+            if (cardElement.classList.contains('flipped') || 
+                cardElement.classList.contains('matched') ||
+                flippedCards.length >= 2) {
+                return;
+            }
+            
+            cardElement.classList.add('flipped');
+            flippedCards.push(index);
+            
+            if (flippedCards.length === 2) {
+                setTimeout(checkMatch, 1000);
+            }
+        }
+
+        function checkMatch() {
+            const [index1, index2] = flippedCards;
+            const card1 = gameCards[index1];
+            const card2 = gameCards[index2];
+            const cardElements = document.querySelectorAll('.card');
+            
+            if (card1.matchId === card2.matchId) {
+                // Match found!
+                cardElements[index1].classList.add('matched');
+                cardElements[index2].classList.add('matched');
+                
+                scores[`player${currentPlayer}`]++;
+                matchedPairs++;
+                
+                updateScoreboard();
+                
+                if (matchedPairs === totalPairs) {
+                    setTimeout(showVictory, 500);
+                } else {
+                    updateGameInfo(`${gameMode === 'group' ? 'Team' : 'Player'} ${currentPlayer} got a match! 🎉`);
+                }
+            } else {
+                // No match
+                cardElements[index1].classList.remove('flipped');
+                cardElements[index2].classList.remove('flipped');
+                
+                currentPlayer = currentPlayer === 1 ? 2 : 1;
+                updateGameInfo(`${gameMode === 'group' ? 'Team' : 'Player'} ${currentPlayer}'s turn`);
+            }
+            
+            updateActivePlayer();
+            flippedCards = [];
+        }
+
+        function updateScoreboard() {
+            document.getElementById('player1Score').textContent = scores.player1;
+            document.getElementById('player2Score').textContent = scores.player2;
+        }
+
+        function updateActivePlayer() {
+            const player1Info = document.getElementById('player1Info');
+            const player2Info = document.getElementById('player2Info');
+            
+            if (currentPlayer === 1) {
+                player1Info.classList.add('active');
+                player2Info.classList.remove('active');
+            } else {
+                player1Info.classList.remove('active');
+                player2Info.classList.add('active');
+            }
+        }
+
+        function updateGameInfo(message) {
+            document.getElementById('gameInfo').textContent = message;
+        }
+
+        function showVictory() {
+            const modal = document.getElementById('victoryModal');
+            const title = document.getElementById('victoryTitle');
+            const message = document.getElementById('victoryMessage');
+            
+            const playerLabel = gameMode === 'group' ? 'Team' : 'Player';
+            
+            if (scores.player1 > scores.player2) {
+                title.textContent = `🏆 ${playerLabel} 1 Wins! 🏆`;
+                message.textContent = `Final Score: ${scores.player1} - ${scores.player2}`;
+            } else if (scores.player2 > scores.player1) {
+                title.textContent = `🏆 ${playerLabel} 2 Wins! 🏆`;
+                message.textContent = `Final Score: ${scores.player2} - ${scores.player1}`;
+            } else {
+                title.textContent = '🤝 It\'s a Tie! 🤝';
+                message.textContent = `Final Score: ${scores.player1} - ${scores.player2}`;
+            }
+            
+            modal.classList.add('active');
+        }
+
+        function restartGame() {
+            document.getElementById('victoryModal').classList.remove('active');
+            initializeGame();
+        }
+
+        function backToMenu() {
+            document.getElementById('victoryModal').classList.remove('active');
+            document.getElementById('gameBoard').classList.remove('active');
+            document.getElementById('modeSelection').style.display = 'block';
+            
+            document.getElementById('player1Info').querySelector('.player-name').textContent = 'Player 1';
+            document.getElementById('player2Info').querySelector('.player-name').textContent = 'Player 2';
+        }
+    </script>
+</body>
+</html>
