@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motor Vehicle Learning Master</title>
+    <title>Motor Vehicle Learning Platform</title>
     <style>
         * {
             margin: 0;
@@ -18,7 +18,7 @@
             padding: 20px;
         }
 
-        .game-container {
+        .learning-container {
             max-width: 1400px;
             margin: 0 auto;
         }
@@ -245,11 +245,11 @@
             box-shadow: 0 8px 20px rgba(0,0,0,0.3);
         }
 
-        .game-board {
+        .assessment-board {
             display: none;
         }
 
-        .game-board.active {
+        .assessment-board.active {
             display: block;
         }
 
@@ -643,10 +643,10 @@
     </style>
 </head>
 <body>
-    <div class="game-container">
+    <div class="learning-container">
         <div class="header">
-            <h1>🏎️ Motor Vehicle Learning Master 🏎️</h1>
-            <p>Master automotive technology through interactive matching games!</p>
+            <h1>🏎️ Motor Vehicle Learning Platform 🏎️</h1>
+            <p>Master automotive technology through interactive assessment and learning exercises!</p>
         </div>
 
         <!-- Topic Selection Screen -->
@@ -671,22 +671,22 @@
 
             <div class="mode-buttons">
                 <button class="mode-btn one-player" onclick="startGame('one-player')">
-                    🎮 Solo Challenge
+                    🎯 Solo Challenge
                 </button>
                 <button class="mode-btn two-player" onclick="startGame('two-player')">
-                    👥 2 Player Battle
+                    👥 Paired Assessment
                 </button>
                 <button class="mode-btn group-mode" onclick="startGame('group')">
                     👨‍👩‍👧‍👦 Group Pairs
                 </button>
                 <button class="mode-btn match-mode" onclick="startGame('match-mode')">
-                    🎯 Match Challenge
+                    🎯 Identification Task
                 </button>
             </div>
         </div>
 
-        <!-- Game Board -->
-        <div class="game-board" id="gameBoard">
+        <!-- Assessment Board -->
+        <div class="assessment-board" id="gameBoard">
             <div class="topic-info" id="topicInfo"></div>
             
             <div class="scoreboard" id="scoreboard">
@@ -722,10 +722,10 @@
         <div class="victory-modal" id="victoryModal">
             <div class="victory-content">
                 <div class="confetti">🎉🎊🎉</div>
-                <h2 id="victoryTitle">Game Over!</h2>
+                <h2 id="victoryTitle">Assessment Complete!</h2>
                 <p id="victoryMessage"></p>
                 <div class="action-buttons">
-                    <button class="btn btn-restart" onclick="restartGame()">Play Again</button>
+                    <button class="btn btn-restart" onclick="restartGame()">Try Again</button>
                     <button class="btn btn-menu" onclick="backToMenu()">Main Menu</button>
                 </div>
             </div>
@@ -1196,19 +1196,19 @@
             const message = document.getElementById('victoryMessage');
 
             if (gameState.gameMode === 'one-player') {
-                title.textContent = `🏆 Excellent! 🏆`;
-                message.textContent = `You matched all pairs!\nFinal Score: ${gameState.scores.player1}`;
+                title.textContent = `✅ Outstanding Performance! ✅`;
+                message.textContent = `You successfully completed all assessments!\nFinal Score: ${gameState.scores.player1}`;
             } else if (gameState.gameMode === 'match-mode') {
-                title.textContent = `🏆 Congratulations! 🏆`;
-                message.textContent = `You completed all matches!\nFinal Score: ${gameState.scores.player1}`;
+                title.textContent = `✅ Excellent Results! ✅`;
+                message.textContent = `You successfully completed all identification tasks!\nFinal Score: ${gameState.scores.player1}`;
             } else {
                 const playerLabel = gameState.gameMode === 'group' ? 'Team' : 'Player';
 
                 if (gameState.scores.player1 > gameState.scores.player2) {
-                    title.textContent = `🏆 ${playerLabel} 1 Wins! 🏆`;
+                    title.textContent = `✅ ${playerLabel} 1 Higher Score! ✅`;
                     message.textContent = `Final Score: ${gameState.scores.player1} - ${gameState.scores.player2}`;
                 } else if (gameState.scores.player2 > gameState.scores.player1) {
-                    title.textContent = `🏆 ${playerLabel} 2 Wins! 🏆`;
+                    title.textContent = `✅ ${playerLabel} 2 Higher Score! ✅`;
                     message.textContent = `Final Score: ${gameState.scores.player2} - ${gameState.scores.player1}`;
                 } else {
                     title.textContent = '🤝 It\'s a Tie! 🤝';

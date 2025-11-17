@@ -1,0 +1,282 @@
+{
+  "metadata": {
+    "topicId": "suspension-steering",
+    "title": "Suspension & Steering",
+    "description": "Core components and concepts for vehicle suspension and steering systems",
+    "levels": ["entry", "level1", "level2", "level3"],
+    "version": "1.0"
+  },
+
+  "levels": {
+    "entry": {
+      "cards": [
+        {
+          "id": "suspension-layout",
+            "entry": {
+              "cards": [
+                {
+                  "id": "suspension-layout-name",
+                  "matchId": "suspension-layout",
+                  "emoji": "🛠️",
+                  "title": "Suspension Layout",
+                  "type": "Name",
+                  "content": "Identify the basic layout elements of vehicle suspension (springs, dampers, control arms)."
+                },
+                {
+                  "id": "suspension-layout-image",
+                  "matchId": "suspension-layout",
+                  "emoji": "📷",
+                  "title": "Suspension Layout Diagram",
+                  "type": "Diagram",
+                  "content": "Diagram showing springs, dampers and control arms.",
+                  "image_id": "suspension-layout"
+                },
+
+                {
+                  "id": "spring-name",
+                  "matchId": "spring",
+                  "emoji": "🔩",
+                  "title": "Coil Spring",
+                  "type": "Name",
+                  "content": "Identify coil spring used to support vehicle weight and store energy."
+                },
+                {
+                  "id": "spring-image",
+                  "matchId": "spring",
+                  "emoji": "📷",
+                  "title": "Coil Spring Photo",
+                  "type": "Photo",
+                  "content": "Photo of a coil spring assembly.",
+                  "image_url": "images/4-stroke/piston-assembly.jpg"
+                },
+
+                {
+                  "id": "shock-absorber-name",
+                  "matchId": "shock-absorber",
+                  "emoji": "🧯",
+                  "title": "Shock Absorber",
+                  "type": "Name",
+                  "content": "Identify shock absorber (damper) that controls oscillations."
+                },
+                {
+                  "id": "shock-absorber-image",
+                  "matchId": "shock-absorber",
+                  "emoji": "📷",
+                  "title": "Shock Absorber Photo",
+                  "type": "Photo",
+                  "content": "Photo/diagram of a shock absorber.",
+                  "image_url": "images/diagrams/suspension-layout.jpg"
+                },
+
+                {
+                  "id": "steering-wheel-name",
+                  "matchId": "steering-wheel",
+                  "emoji": "🔁",
+                  "title": "Steering Wheel",
+                  "type": "Name",
+                  "content": "Identify the steering wheel as the driver input device."
+                },
+                {
+                  "id": "steering-wheel-image",
+                  "matchId": "steering-wheel",
+                  "emoji": "📷",
+                  "title": "Steering Wheel Photo",
+                  "type": "Photo",
+                  "content": "Photo of a steering wheel and its controls.",
+                  "image_url": "images/tools/wrench.jpg"
+                }
+              ]
+            },
+
+            "level1": {
+              "cards": [
+                {
+                  "id": "control-arm-name",
+                  "matchId": "control-arm",
+                  "emoji": "🔧",
+                  "title": "Control Arm",
+                  "type": "Name",
+                  "content": "Identify the control arm and its purpose."
+                },
+                {
+                  "id": "control-arm-image",
+                  "matchId": "control-arm",
+                  "emoji": "📷",
+                  "title": "Control Arm Photo",
+                  "type": "Photo",
+                  "content": "Photo of a control arm connecting wheel hub to chassis.",
+                  "image_url": "images/4-stroke/connecting-rod.jpg"
+                },
+
+                {
+                  "id": "anti-roll-bar-name",
+                  "matchId": "anti-roll-bar",
+                  "emoji": "➰",
+                  "title": "Anti-roll Bar",
+                  "type": "Name",
+                  "content": "Identify the anti-roll bar that reduces roll during cornering."
+                },
+                {
+                  "id": "anti-roll-bar-image",
+                  "matchId": "anti-roll-bar",
+                  "emoji": "📷",
+                  "title": "Anti-roll Bar Photo",
+                  "type": "Photo",
+                  "content": "Photo/diagram of an anti-roll bar and linkages.",
+                  "image_url": "images/diagrams/braking-circuit.jpg"
+                },
+
+                {
+                  "id": "tie-rod-name",
+                  "matchId": "tie-rod",
+                  "emoji": "⛓️",
+                  "title": "Tie Rod",
+                  "type": "Name",
+                  "content": "Identify the tie rod transmitting steering forces."
+                },
+                {
+                  "id": "tie-rod-image",
+                  "matchId": "tie-rod",
+                  "emoji": "📷",
+                  "title": "Tie Rod Photo",
+                  "type": "Photo",
+                  "content": "Photo of a tie rod and end link.",
+                  "image_url": "images/electrical/wiring-loom.jpg"
+                },
+
+                {
+                  "id": "ball-joint-name",
+                  "matchId": "ball-joint",
+                  "emoji": "🔘",
+                  "title": "Ball Joint",
+                  "type": "Name",
+                  "content": "Identify the ball joint allowing articulation."
+                },
+                {
+                  "id": "ball-joint-image",
+                  "matchId": "ball-joint",
+                  "emoji": "📷",
+                  "title": "Ball Joint Photo",
+                  "type": "Photo",
+                  "content": "Photo of a ball joint assembly.",
+                  "image_url": "images/4-stroke/crankshaft.jpg"
+                }
+              ]
+            },
+
+            "level2": {
+              "cards": [
+                {
+                  "id": "rack-and-pinion-name",
+                  "matchId": "rack-and-pinion",
+                  "emoji": "⚙️",
+                  "title": "Rack and Pinion",
+                  "type": "Name",
+                  "content": "Identify rack and pinion steering mechanism."
+                },
+                {
+                  "id": "rack-and-pinion-image",
+                  "matchId": "rack-and-pinion",
+                  "emoji": "📷",
+                  "title": "Rack and Pinion Photo",
+                  "type": "Photo",
+                  "content": "Diagram/photo of rack and pinion steering.",
+                  "image_url": "images/diagrams/electrical-system.jpg"
+                },
+
+                {
+                  "id": "power-steering-name",
+                  "matchId": "power-steering",
+                  "emoji": "🔋",
+                  "title": "Power Steering",
+                  "type": "Name",
+                  "content": "Identify power steering components and function."
+                },
+                {
+                  "id": "power-steering-image",
+                  "matchId": "power-steering",
+                  "emoji": "📷",
+                  "title": "Power Steering Photo",
+                  "type": "Photo",
+                  "content": "Photo/diagram of power steering unit.",
+                  "image_url": "images/electrical/alternator.jpg"
+                },
+
+                {
+                  "id": "wheel-alignment-name",
+                  "matchId": "wheel-alignment",
+                  "emoji": "📐",
+                  "title": "Wheel Alignment",
+                  "type": "Name",
+                  "content": "Identify alignment adjustments: toe, camber, caster."
+                },
+                {
+                  "id": "wheel-alignment-image",
+                  "matchId": "wheel-alignment",
+                  "emoji": "📷",
+                  "title": "Wheel Alignment Diagram",
+                  "type": "Diagram",
+                  "content": "Diagram showing toe, camber and caster adjustments.",
+                  "image_url": "images/diagrams/engine-cross-section.jpg"
+                }
+              ]
+            },
+
+            "level3": {
+              "cards": [
+                {
+                  "id": "adaptive-suspension-name",
+                  "matchId": "adaptive-suspension",
+                  "emoji": "🤖",
+                  "title": "Adaptive Suspension",
+                  "type": "Name",
+                  "content": "Identify adaptive/active suspension concepts and components."
+                },
+                {
+                  "id": "adaptive-suspension-image",
+                  "matchId": "adaptive-suspension",
+                  "emoji": "📷",
+                  "title": "Adaptive Suspension Diagram",
+                  "type": "Diagram",
+                  "content": "Diagram/photo of electronic suspension components.",
+                  "image_url": "images/diagrams/cooling-system.jpg"
+                },
+
+                {
+                  "id": "steering-geometry-name",
+                  "matchId": "steering-geometry",
+                  "emoji": "📏",
+                  "title": "Steering Geometry",
+                  "type": "Name",
+                  "content": "Identify principles such as Ackermann and scrub radius."
+                },
+                {
+                  "id": "steering-geometry-image",
+                  "matchId": "steering-geometry",
+                  "emoji": "📷",
+                  "title": "Steering Geometry Diagram",
+                  "type": "Diagram",
+                  "content": "Diagram illustrating Ackermann geometry and scrub radius.",
+                  "image_url": "images/diagrams/fuel-system.jpg"
+                },
+
+                {
+                  "id": "diagnostics-name",
+                  "matchId": "diagnostics",
+                  "emoji": "🧰",
+                  "title": "Suspension Diagnostics",
+                  "type": "Name",
+                  "content": "Identify common diagnostic checks for suspension and steering."
+                },
+                {
+                  "id": "diagnostics-image",
+                  "matchId": "diagnostics",
+                  "emoji": "📷",
+                  "title": "Diagnostics Photo",
+                  "type": "Photo",
+                  "content": "Example images used in diagnostics: uneven tyre wear, fluid leaks.",
+                  "image_url": "images/electrical/multimeter.jpg"
+                }
+              ]
+            }
+}
