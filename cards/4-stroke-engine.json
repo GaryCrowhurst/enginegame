@@ -13,7 +13,7 @@
           "title": "Stroke 1",
           "type": "Stroke Name",
           "content": "⬇️",
-          "image_url": "images/intake-stroke-name.jpg"
+          "image_id": "intake-stroke"
         },
         {
           "id": "intake-desc",
@@ -22,7 +22,7 @@
           "title": "What Happens",
           "type": "Description",
           "content": "Suck it in! Piston drops Fuel enters",
-          "image_url": "images/intake-description.jpg"
+          "image_id": "intake-stroke"
         },
         {
           "id": "comp-name",
@@ -31,7 +31,7 @@
           "title": "Stroke 2",
           "type": "Stroke Name",
           "content": "⬆️",
-          "image_url": "images/compression-stroke-name.jpg"
+          "image_id": "compression-stroke"
         },
         {
           "id": "comp-desc",
@@ -40,7 +40,7 @@
           "title": "What Happens",
           "type": "Description",
           "content": "Squeeze it! Gets HOT! All tight!",
-          "image_url": "images/compression-description.jpg"
+          "image_id": "compression-stroke"
         },
         {
           "id": "power-name",
@@ -49,7 +49,7 @@
           "title": "Stroke 3",
           "type": "Stroke Name",
           "content": "💥",
-          "image_url": "images/power-stroke-name.jpg"
+          "image_id": "power-stroke"
         },
         {
           "id": "power-desc",
@@ -58,7 +58,7 @@
           "title": "What Happens",
           "type": "Description",
           "content": "KA-BOOM! Explosion! Piston SMASH!",
-          "image_url": "images/power-description.jpg"
+          "image_id": "power-stroke"
         },
         {
           "id": "exhaust-name",
@@ -67,7 +67,7 @@
           "title": "Stroke 4",
           "type": "Stroke Name",
           "content": "🌫️",
-          "image_url": "images/exhaust-stroke-name.jpg"
+          "image_id": "exhaust-stroke"
         },
         {
           "id": "exhaust-desc",
@@ -76,7 +76,7 @@
           "title": "What Happens",
           "type": "Description",
           "content": "Push it out! Waste escapes Clear clean",
-          "image_url": "images/exhaust-description.jpg"
+          "image_id": "exhaust-stroke"
         }
       ]
     },
@@ -92,7 +92,7 @@
           "title": "INTAKE STROKE",
           "type": "Stroke",
           "content": "Piston DOWN",
-          "image_url": "images/intake-stroke.jpg"
+          "image_id": "intake-stroke"
         },
         {
           "id": "intake-desc",
@@ -101,7 +101,7 @@
           "title": "What Happens",
           "type": "Description",
           "content": "Inlet valve opens Air-fuel mixture enters cylinder",
-          "image_url": "images/intake-description.jpg"
+          "image_id": "intake-stroke"
         },
         {
           "id": "comp-name",
@@ -110,7 +110,7 @@
           "title": "COMPRESSION",
           "type": "Stroke",
           "content": "Piston UP",
-          "image_url": "images/compression-stroke.jpg"
+          "image_id": "compression-stroke"
         },
         {
           "id": "comp-desc",
@@ -119,7 +119,7 @@
           "title": "What Happens",
           "type": "Description",
           "content": "Both valves close Mixture compressed Temperature rises",
-          "image_url": "images/compression-description.jpg"
+          "image_id": "compression-stroke"
         },
         {
           "id": "power-name",
@@ -128,7 +128,7 @@
           "title": "POWER STROKE",
           "type": "Stroke",
           "content": "Piston DOWN",
-          "image_url": "images/power-stroke.jpg"
+          "image_id": "power-stroke"
         },
         {
           "id": "power-desc",
@@ -137,7 +137,7 @@
           "title": "What Happens",
           "type": "Description",
           "content": "Spark plug fires Explosion occurs Piston forced down",
-          "image_url": "images/power-description.jpg"
+          "image_id": "power-stroke"
         },
         {
           "id": "exhaust-name",
@@ -146,7 +146,7 @@
           "title": "EXHAUST STROKE",
           "type": "Stroke",
           "content": "Piston UP",
-          "image_url": "images/exhaust-stroke.jpg"
+          "image_id": "exhaust-stroke"
         },
         {
           "id": "exhaust-desc",
@@ -155,7 +155,7 @@
           "title": "What Happens",
           "type": "Description",
           "content": "Exhaust valve opens Waste gases pushed out",
-          "image_url": "images/exhaust-description.jpg"
+          "image_id": "exhaust-stroke"
         },
         {
           "id": "piston-name",
@@ -164,7 +164,7 @@
           "title": "PISTON",
           "type": "Component",
           "content": "Seals cylinder",
-          "image_url": "images/piston-component.jpg"
+          "image_id": "piston-assembly"
         },
         {
           "id": "piston-desc",
@@ -173,7 +173,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Moves up and down Transfers force to connecting rod",
-          "image_url": "images/piston-component.jpg"
+          "image_id": "piston-assembly"
         },
         {
           "id": "spark-name",
@@ -182,7 +182,7 @@
           "title": "SPARK PLUG",
           "type": "Component",
           "content": "Ignites fuel",
-          "image_url": "images/spark-component.jpg"
+          "image_id": "spark-plug"
         },
         {
           "id": "spark-desc",
@@ -191,7 +191,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Creates electric spark to ignite air-fuel mix",
-          "image_url": "images/spark-component.jpg"
+          "image_id": "spark-plug"
         },
         {
           "id": "crank-name",
@@ -200,7 +200,7 @@
           "title": "CRANKSHAFT",
           "type": "Component",
           "content": "Rotates engine",
-          "image_url": "images/crank-component.jpg"
+          "image_id": "crankshaft"
         },
         {
           "id": "crank-desc",
@@ -209,7 +209,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Converts linear motion to rotary power output",
-          "image_url": "images/crank-component.jpg"
+          "image_id": "crankshaft"
         },
         {
           "id": "conrod-name",
@@ -218,7 +218,7 @@
           "title": "CONNECTING ROD",
           "type": "Component",
           "content": "Links piston",
-          "image_url": "images/conrod-component.jpg"
+          "image_id": "connecting-rod"
         },
         {
           "id": "conrod-desc",
@@ -227,7 +227,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Connects piston to crankshaft Transfers power",
-          "image_url": "images/conrod-component.jpg"
+          "image_id": "connecting-rod"
         }
       ]
     },
@@ -243,7 +243,7 @@
           "title": "INTAKE VALVE",
           "type": "Valve",
           "content": "Opens during INTAKE",
-          "image_url": "images/intake-v-valve.jpg"
+          "image_id": "cylinder-head"
         },
         {
           "id": "intake-valve-desc",
@@ -252,7 +252,7 @@
           "title": "Operation",
           "type": "Valve",
           "content": "Allows air-fuel mixture entry Seals exhaust",
-          "image_url": "images/intake-v-valve.jpg"
+          "image_id": "cylinder-head"
         },
         {
           "id": "exhaust-valve",
@@ -261,7 +261,7 @@
           "title": "EXHAUST VALVE",
           "type": "Valve",
           "content": "Opens during EXHAUST",
-          "image_url": "images/exhaust-v-valve.jpg"
+          "image_id": "cylinder-head"
         },
         {
           "id": "exhaust-valve-desc",
@@ -270,7 +270,7 @@
           "title": "Operation",
           "type": "Valve",
           "content": "Expels burnt gases Prevents backflow Maintains sealing",
-          "image_url": "images/exhaust-v-valve.jpg"
+          "image_id": "cylinder-head"
         },
         {
           "id": "camshaft-name",
@@ -279,7 +279,7 @@
           "title": "CAMSHAFT",
           "type": "Component",
           "content": "Controls timing",
-          "image_url": "images/camshaft-component.jpg"
+          "image_id": "crankshaft"
         },
         {
           "id": "camshaft-desc",
@@ -288,7 +288,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Opens closes valves at precise timing Optimizes performance",
-          "image_url": "images/camshaft-component.jpg"
+          "image_id": "crankshaft"
         },
         {
           "id": "cylinder-name",
@@ -297,7 +297,7 @@
           "title": "CYLINDER",
           "type": "Component",
           "content": "Combustion chamber",
-          "image_url": "images/cylinder-component.jpg"
+          "image_id": "engine-cross-section"
         },
         {
           "id": "cylinder-desc",
@@ -306,7 +306,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Houses piston Contains combustion Weathers high temp",
-          "image_url": "images/cylinder-component.jpg"
+          "image_id": "engine-cross-section"
         },
         {
           "id": "intake-manifold",
@@ -315,7 +315,7 @@
           "title": "INTAKE MANIFOLD",
           "type": "Component",
           "content": "Distributes fuel",
-          "image_url": "images/intake-mani-component.jpg"
+          "image_id": "engine-cross-section"
         },
         {
           "id": "intake-manifold-desc",
@@ -324,7 +324,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Routes air-fuel mix to cylinders evenly Optimizes flow",
-          "image_url": "images/intake-mani-component.jpg"
+          "image_id": "engine-cross-section"
         },
         {
           "id": "exhaust-manifold",
@@ -333,7 +333,7 @@
           "title": "EXHAUST MANIFOLD",
           "type": "Component",
           "content": "Collects exhaust",
-          "image_url": "images/exhaust-mani-component.jpg"
+          "image_id": "engine-cross-section"
         },
         {
           "id": "exhaust-manifold-desc",
@@ -342,7 +342,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Gathers burned gas from all cylinders Feeds to exhaust system",
-          "image_url": "images/exhaust-mani-component.jpg"
+          "image_id": "engine-cross-section"
         },
         {
           "id": "valve-timing",
@@ -351,7 +351,7 @@
           "title": "VALVE TIMING",
           "type": "Concept",
           "content": "Opening closing schedule",
-          "image_url": "images/valve-time-concept.jpg"
+          "image_id": "valve-timing-diagram"
         },
         {
           "id": "valve-timing-desc",
@@ -360,7 +360,7 @@
           "title": "Importance",
           "type": "Concept",
           "content": "Controls engine performance efficiency Measured in degrees",
-          "image_url": "images/valve-time-concept.jpg"
+          "image_id": "valve-timing-diagram"
         },
         {
           "id": "compression-ratio",
@@ -369,7 +369,7 @@
           "title": "COMPRESSION RATIO",
           "type": "Concept",
           "content": "Volume measurement",
-          "image_url": "images/compression-r-concept.jpg"
+          "image_id": "engine-cross-section"
         },
         {
           "id": "compression-ratio-desc",
@@ -378,7 +378,7 @@
           "title": "Definition",
           "type": "Concept",
           "content": "Ratio of max to min volume in cylinder Affects power output",
-          "image_url": "images/compression-r-concept.jpg"
+          "image_id": "engine-cross-section"
         },
         {
           "id": "tdc-name",
@@ -387,7 +387,7 @@
           "title": "TDC (Top Dead Center)",
           "type": "Position",
           "content": "Highest piston point",
-          "image_url": "images/tdc-position.jpg"
+          "image_id": "piston-assembly"
         },
         {
           "id": "tdc-desc",
@@ -396,7 +396,7 @@
           "title": "Significance",
           "type": "Position",
           "content": "Reference point for timing diagnostics Used in all strokes",
-          "image_url": "images/tdc-position.jpg"
+          "image_id": "piston-assembly"
         },
         {
           "id": "bdc-name",
@@ -405,7 +405,7 @@
           "title": "BDC (Bottom Dead Center)",
           "type": "Position",
           "content": "Lowest piston point",
-          "image_url": "images/bdc-position.jpg"
+          "image_id": "piston-assembly"
         },
         {
           "id": "bdc-desc",
@@ -414,7 +414,7 @@
           "title": "Significance",
           "type": "Position",
           "content": "Maximum cylinder volume point End of intake stroke",
-          "image_url": "images/bdc-position.jpg"
+          "image_id": "piston-assembly"
         },
         {
           "id": "bore-name",
@@ -423,7 +423,7 @@
           "title": "BORE",
           "type": "Measurement",
           "content": "Cylinder diameter",
-          "image_url": "images/bore-measurement.jpg"
+          "image_id": "cylinder-head"
         },
         {
           "id": "bore-desc",
@@ -432,7 +432,7 @@
           "title": "Importance",
           "type": "Measurement",
           "content": "Affects displacement Influences power Key engine spec",
-          "image_url": "images/bore-measurement.jpg"
+          "image_id": "cylinder-head"
         },
         {
           "id": "stroke-measure",
@@ -441,7 +441,7 @@
           "title": "STROKE LENGTH",
           "type": "Measurement",
           "content": "Piston travel distance",
-          "image_url": "images/stroke-meas-measurement.jpg"
+          "image_id": "piston-assembly"
         },
         {
           "id": "stroke-measure-desc",
@@ -450,7 +450,7 @@
           "title": "Importance",
           "type": "Measurement",
           "content": "Affects displacement Influences torque Key engine spec",
-          "image_url": "images/stroke-meas-measurement.jpg"
+          "image_id": "piston-assembly"
         }
       ]
     },
@@ -466,7 +466,7 @@
           "title": "VVT SYSTEM",
           "type": "Technology",
           "content": "Variable Valve Timing",
-          "image_url": "images/vvt-technology.jpg"
+          "image_id": "valve-timing-diagram"
         },
         {
           "id": "vvt-desc",
@@ -475,7 +475,7 @@
           "title": "Function",
           "type": "Technology",
           "content": "Adjusts timing electronically Optimizes power efficiency Reduces emissions",
-          "image_url": "images/vvt-technology.jpg"
+          "image_id": "valve-timing-diagram"
         },
         {
           "id": "vvl-name",
@@ -484,7 +484,7 @@
           "title": "VVL SYSTEM",
           "type": "Technology",
           "content": "Variable Valve Lift",
-          "image_url": "images/vvl-technology.jpg"
+          "image_id": "valve-timing-diagram"
         },
         {
           "id": "vvl-desc",
@@ -493,7 +493,7 @@
           "title": "Function",
           "type": "Technology",
           "content": "Controls valve opening height Matches load conditions Improves efficiency",
-          "image_url": "images/vvl-technology.jpg"
+          "image_id": "valve-timing-diagram"
         },
         {
           "id": "atkinson-name",
@@ -502,7 +502,7 @@
           "title": "ATKINSON CYCLE",
           "type": "Concept",
           "content": "Modified combustion",
-          "image_url": "images/atkinson-concept.jpg"
+          "image_id": "engine-cross-section"
         },
         {
           "id": "atkinson-desc",
@@ -511,7 +511,7 @@
           "title": "Operation",
           "type": "Concept",
           "content": "Intake valve stays open into compression Better efficiency",
-          "image_url": "images/atkinson-concept.jpg"
+          "image_id": "engine-cross-section"
         },
         {
           "id": "knock-detection",
@@ -520,7 +520,7 @@
           "title": "KNOCK SENSOR",
           "type": "Sensor",
           "content": "Detects detonation",
-          "image_url": "images/knock-detect-sensor.jpg"
+          "image_id": "spark-plug"
         },
         {
           "id": "knock-detection-desc",
@@ -529,7 +529,7 @@
           "title": "Function",
           "type": "Sensor",
           "content": "Monitors pre-ignition Adjusts timing fuel Protects engine",
-          "image_url": "images/knock-detect-sensor.jpg"
+          "image_id": "spark-plug"
         },
         {
           "id": "lambda-sensor",
@@ -538,7 +538,7 @@
           "title": "LAMBDA SENSOR",
           "type": "Sensor",
           "content": "Oxygen measurement",
-          "image_url": "images/lambda-sensor.jpg"
+          "image_id": "lambda-sensor"
         },
         {
           "id": "lambda-sensor-desc",
@@ -547,7 +547,7 @@
           "title": "Function",
           "type": "Sensor",
           "content": "Measures O2 in exhaust Optimizes fuel ratio Reduces emissions",
-          "image_url": "images/lambda-sensor.jpg"
+          "image_id": "lambda-sensor"
         },
         {
           "id": "thermostatic",
@@ -556,7 +556,7 @@
           "title": "THERMOSTAT",
           "type": "Component",
           "content": "Temperature control",
-          "image_url": "images/thermo-component.jpg"
+          "image_id": "cooling-system"
         },
         {
           "id": "thermostatic-desc",
@@ -565,7 +565,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Maintains operating temp Optimizes efficiency Protects engine",
-          "image_url": "images/thermo-component.jpg"
+          "image_id": "cooling-system"
         },
         {
           "id": "combustion-chamber",
@@ -574,7 +574,7 @@
           "title": "COMBUSTION CHAMBER",
           "type": "Area",
           "content": "Combustion space",
-          "image_url": "images/comb-chamber-area.jpg"
+          "image_id": "engine-cross-section"
         },
         {
           "id": "combustion-chamber-desc",
@@ -583,7 +583,7 @@
           "title": "Design",
           "type": "Area",
           "content": "Shape affects burn rate Influences efficiency Designed for turbulence",
-          "image_url": "images/comb-chamber-area.jpg"
+          "image_id": "engine-cross-section"
         },
         {
           "id": "turbo-name",
@@ -592,7 +592,7 @@
           "title": "TURBOCHARGER",
           "type": "Technology",
           "content": "Boosts intake air",
-          "image_url": "images/turbo-technology.jpg"
+          "image_id": "turbocharger"
         },
         {
           "id": "turbo-desc",
@@ -601,7 +601,7 @@
           "title": "Operation",
           "type": "Technology",
           "content": "Uses exhaust energy Compresses intake air Increases power output",
-          "image_url": "images/turbo-technology.jpg"
+          "image_id": "turbocharger"
         },
         {
           "id": "supercharger",
@@ -610,7 +610,7 @@
           "title": "SUPERCHARGER",
           "type": "Technology",
           "content": "Mechanical compression",
-          "image_url": "images/super-technology.jpg"
+          "image_id": "turbocharger"
         },
         {
           "id": "supercharger-desc",
@@ -619,7 +619,7 @@
           "title": "Operation",
           "type": "Technology",
           "content": "Belt-driven compressor Increases air density Raises boost pressure",
-          "image_url": "images/super-technology.jpg"
+          "image_id": "turbocharger"
         },
         {
           "id": "direct-injection",
@@ -628,7 +628,7 @@
           "title": "DIRECT INJECTION",
           "type": "System",
           "content": "Fuel delivery method",
-          "image_url": "images/di-system.jpg"
+          "image_id": "direct-injection"
         },
         {
           "id": "direct-injection-desc",
@@ -637,7 +637,7 @@
           "title": "Advantages",
           "type": "System",
           "content": "Precise fuel control Improved efficiency Better combustion",
-          "image_url": "images/di-system.jpg"
+          "image_id": "direct-injection"
         },
         {
           "id": "swirl-squish",
@@ -646,7 +646,7 @@
           "title": "SWIRL & SQUISH",
           "type": "Motion",
           "content": "Air motion patterns",
-          "image_url": "images/swirl-motion.jpg"
+          "image_id": "engine-cross-section"
         },
         {
           "id": "swirl-squish-desc",
@@ -655,7 +655,7 @@
           "title": "Purpose",
           "type": "Motion",
           "content": "Improves air-fuel mixing Optimizes combustion Enhances efficiency",
-          "image_url": "images/swirl-motion.jpg"
+          "image_id": "engine-cross-section"
         },
         {
           "id": "scavenging",
@@ -664,7 +664,7 @@
           "title": "SCAVENGING",
           "type": "Process",
           "content": "Exhaust gas removal",
-          "image_url": "images/scav-process.jpg"
+          "image_id": "exhaust-stroke"
         },
         {
           "id": "scavenging-desc",
@@ -673,7 +673,7 @@
           "title": "Importance",
           "type": "Process",
           "content": "Removes burnt gases Prepares for intake Affects efficiency",
-          "image_url": "images/scav-process.jpg"
+          "image_id": "exhaust-stroke"
         },
         {
           "id": "egr-system",
@@ -682,7 +682,7 @@
           "title": "EGR SYSTEM",
           "type": "Emissions",
           "content": "Recirculates exhaust",
-          "image_url": "images/egr-emissions.jpg"
+          "image_id": "engine-cross-section"
         },
         {
           "id": "egr-system-desc",
@@ -691,7 +691,7 @@
           "title": "Function",
           "type": "Emissions",
           "content": "Routes exhaust back Reduces NOx emissions Lowers combustion temp",
-          "image_url": "images/egr-emissions.jpg"
+          "image_id": "engine-cross-section"
         },
         {
           "id": "resonance-tuning",
@@ -700,7 +700,7 @@
           "title": "RESONANCE TUNING",
           "type": "Technology",
           "content": "Intake tuning",
-          "image_url": "images/resonance-technology.jpg"
+          "image_id": "engine-cross-section"
         },
         {
           "id": "resonance-tuning-desc",
@@ -709,7 +709,7 @@
           "title": "Effect",
           "type": "Technology",
           "content": "Uses intake wave effects Optimizes filling Increases power",
-          "image_url": "images/resonance-technology.jpg"
+          "image_id": "engine-cross-section"
         }
       ]
     }

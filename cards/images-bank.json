@@ -52,7 +52,7 @@
       "piston-assembly": {
         "id": "piston-assembly",
         "name": "Piston Assembly",
-        "url": "images/4-stroke/piston-assembly.jpg",
+        "url": "images/4-stroke/piston-assembly.png",
         "description": "Complete piston with rings and connecting rod",
         "type": "photo",
         "size": "350x350",
@@ -62,7 +62,7 @@
       "spark-plug": {
         "id": "spark-plug",
         "name": "Spark Plug",
-        "url": "images/4-stroke/spark-plug.jpg",
+        "url": "images/4-stroke/spark-plug.png",
         "description": "Close-up of spark plug showing electrode gap",
         "type": "photo",
         "size": "300x400",
@@ -72,7 +72,7 @@
       "crankshaft": {
         "id": "crankshaft",
         "name": "Crankshaft",
-        "url": "images/4-stroke/crankshaft.jpg",
+        "url": "images/4-stroke/crankshaft.png",
         "description": "Crankshaft with multiple crank pins and counterweights",
         "type": "diagram",
         "size": "500x300",
@@ -102,7 +102,7 @@
       "valve-timing-diagram": {
         "id": "valve-timing-diagram",
         "name": "Valve Timing Diagram",
-        "url": "images/4-stroke/valve-timing.jpg",
+        "url": "images/4-stroke/valve-timing.png",
         "description": "Graph showing valve opening/closing times in degrees",
         "type": "diagram",
         "size": "500x350",
@@ -122,7 +122,7 @@
       "direct-injection": {
         "id": "direct-injection",
         "name": "Direct Injection Injector",
-        "url": "images/4-stroke/direct-injection.jpg",
+        "url": "images/4-stroke/direct-injection.webp",
         "description": "Fuel injector mounted in cylinder head",
         "type": "photo",
         "size": "300x400",
@@ -175,7 +175,7 @@
       "fuse-box": {
         "id": "fuse-box",
         "name": "Fuse Box",
-        "url": "images/electrical/fuse-box.jpg",
+        "url": "images/electrical/fuse-box.webp",
         "description": "Fuse and relay box with circuit protection",
         "type": "photo",
         "size": "400x300",
@@ -195,7 +195,7 @@
       "obd-scanner": {
         "id": "obd-scanner",
         "name": "OBD-II Scanner",
-        "url": "images/electrical/obd-scanner.jpg",
+        "url": "images/electrical/obd-scanner.webp",
         "description": "Diagnostic scanner reading fault codes",
         "type": "photo",
         "size": "400x300",
@@ -205,7 +205,7 @@
       "can-bus-diagram": {
         "id": "can-bus-diagram",
         "name": "CAN-BUS Network Diagram",
-        "url": "images/electrical/can-bus-diagram.jpg",
+        "url": "images/electrical/can-bus-diagram.png",
         "description": "Vehicle network topology showing ECU connections",
         "type": "diagram",
         "size": "500x400",
@@ -238,7 +238,7 @@
       "disc-brake": {
         "id": "disc-brake",
         "name": "Disc Brake Assembly",
-        "url": "images/braking/disc-brake.jpg",
+        "url": "images/braking/disc-brake.png",
         "description": "Complete disc brake showing caliper and rotor",
         "type": "photo",
         "size": "400x350",
@@ -248,7 +248,7 @@
       "drum-brake": {
         "id": "drum-brake",
         "name": "Drum Brake Assembly",
-        "url": "images/braking/drum-brake.jpg",
+        "url": "images/braking/drum-brake.webp",
         "description": "Drum brake with shoes and cylinders",
         "type": "diagram",
         "size": "400x350",
@@ -318,7 +318,7 @@
       "esp-system": {
         "id": "esp-system",
         "name": "ESP Control Diagram",
-        "url": "images/braking/esp-system.jpg",
+        "url": "images/braking/esp-system.png",
         "description": "Electronic stability program system diagram",
         "type": "diagram",
         "size": "500x400",
@@ -328,7 +328,7 @@
       "regenerative-braking": {
         "id": "regenerative-braking",
         "name": "Regenerative Braking System",
-        "url": "images/braking/regenerative-braking.jpg",
+        "url": "images/braking/egenerative-braking.png",
         "description": "Hybrid/EV energy recovery system diagram",
         "type": "diagram",
         "size": "500x350",
@@ -381,7 +381,7 @@
       "torque-wrench": {
         "id": "torque-wrench",
         "name": "Torque Wrench",
-        "url": "images/tools/torque-wrench.jpg",
+        "url": "images/tools/torque-wrench.webp",
         "description": "Precision torque wrench for critical fasteners",
         "type": "photo",
         "size": "400x150",
@@ -404,7 +404,7 @@
       "engine-cross-section": {
         "id": "engine-cross-section",
         "name": "Engine Cross-Section",
-        "url": "images/diagrams/engine-cross-section.jpg",
+        "url": "images/digrams/engine-cross-section.jpg",
         "description": "Complete 4-stroke engine internal structure",
         "type": "diagram",
         "size": "600x400",
@@ -414,7 +414,7 @@
       "cooling-system": {
         "id": "cooling-system",
         "name": "Cooling System Diagram",
-        "url": "images/diagrams/cooling-system.jpg",
+        "url": "images/digrams/cooling-system.webp",
         "description": "Radiator, thermostat, water pump system layout",
         "type": "diagram",
         "size": "500x400",
@@ -424,7 +424,7 @@
       "fuel-system": {
         "id": "fuel-system",
         "name": "Fuel System Diagram",
-        "url": "images/diagrams/fuel-system.jpg",
+        "url": "images/digrams/fuel-system.jpg",
         "description": "Tank, pump, injectors, rails system diagram",
         "type": "diagram",
         "size": "500x350",
@@ -434,7 +434,7 @@
       "electrical-system": {
         "id": "electrical-system",
         "name": "Electrical System Diagram",
-        "url": "images/diagrams/electrical-system.jpg",
+        "url": "images/digrams/electrical-system.png",
         "description": "Battery, alternator, starter interconnections",
         "type": "diagram",
         "size": "500x350",
@@ -444,7 +444,7 @@
       "braking-circuit": {
         "id": "braking-circuit",
         "name": "Braking Circuit Diagram",
-        "url": "images/diagrams/braking-circuit.jpg",
+        "url": "images/digrams/braking-circuit.jpg",
         "description": "Master cylinder to wheels braking circuit",
         "type": "diagram",
         "size": "500x400",
@@ -454,7 +454,7 @@
       "suspension-layout": {
         "id": "suspension-layout",
         "name": "Suspension System Layout",
-        "url": "images/diagrams/suspension-layout.jpg",
+        "url": "images/digrams/suspension-layout.jpg",
         "description": "Springs, dampers, control arms arrangement",
         "type": "diagram",
         "size": "500x400",

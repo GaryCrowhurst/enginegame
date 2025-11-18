@@ -13,7 +13,7 @@
           "title": "BRAKE PAD",
           "type": "Component",
           "content": "Friction material",
-          "image_url": "images/brake-pad-component.jpg"
+          "image_id": "brake-pads"
         },
         {
           "id": "brake-pad-desc",
@@ -22,7 +22,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Grips rotor Creates friction Converts speed to heat",
-          "image_url": "images/brake-pad-component.jpg"
+          "image_id": "brake-pads"
         },
         {
           "id": "brake-rotor",
@@ -31,7 +31,7 @@
           "title": "BRAKE ROTOR",
           "type": "Component",
           "content": "Rotating disc",
-          "image_url": "images/rotor-component.jpg"
+          "image_id": "brake-rotor"
         },
         {
           "id": "brake-rotor-desc",
@@ -40,7 +40,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Attached to wheel Gripped by pads Dissipates heat",
-          "image_url": "images/rotor-component.jpg"
+          "image_id": "brake-rotor"
         },
         {
           "id": "brake-drum",
@@ -49,7 +49,7 @@
           "title": "BRAKE DRUM",
           "type": "Component",
           "content": "Cylindrical housing",
-          "image_url": "images/drum-component.jpg"
+          "image_id": "drum-brake"
         },
         {
           "id": "brake-drum-desc",
@@ -58,7 +58,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Houses brake shoes Attached to wheel Rear brake common",
-          "image_url": "images/drum-component.jpg"
+          "image_id": "drum-brake"
         },
         {
           "id": "brake-caliper",
@@ -67,7 +67,7 @@
           "title": "BRAKE CALIPER",
           "type": "Component",
           "content": "Piston housing",
-          "image_url": "images/caliper-component.jpg"
+          "image_id": "disc-brake"
         },
         {
           "id": "brake-caliper-desc",
@@ -76,7 +76,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Holds brake pads Applies pressure Clamps rotor",
-          "image_url": "images/caliper-component.jpg"
+          "image_id": "disc-brake"
         },
         {
           "id": "master-cyl-name",
@@ -85,7 +85,7 @@
           "title": "MASTER CYLINDER",
           "type": "Component",
           "content": "Pressure generator",
-          "image_url": "images/master-cyl-component.jpg"
+          "image_id": "master-cylinder"
         },
         {
           "id": "master-cyl-desc",
@@ -94,7 +94,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Activated by pedal Pressurizes brake fluid Distributes pressure",
-          "image_url": "images/master-cyl-component.jpg"
+          "image_id": "master-cylinder"
         }
       ]
     },
@@ -110,7 +110,7 @@
           "title": "BRAKE FLUID",
           "type": "Medium",
           "content": "Hydraulic liquid",
-          "image_url": "images/fluid-medium.jpg"
+          "image_id": "master-cylinder"
         },
         {
           "id": "brake-fluid-desc",
@@ -119,7 +119,7 @@
           "title": "Purpose",
           "type": "Medium",
           "content": "Transmits pressure Incompressible Hygroscopic",
-          "image_url": "images/fluid-medium.jpg"
+          "image_id": "master-cylinder"
         },
         {
           "id": "abs-system",
@@ -128,7 +128,7 @@
           "title": "ABS - Anti-Lock System",
           "type": "Safety",
           "content": "Skid prevention",
-          "image_url": "images/abs-safety.jpg"
+          "image_id": "abs-module"
         },
         {
           "id": "abs-system-desc",
@@ -137,7 +137,7 @@
           "title": "Operation",
           "type": "Safety",
           "content": "Releases brake pressure Rapid cycling Prevents wheel lock",
-          "image_url": "images/abs-safety.jpg"
+          "image_id": "abs-module"
         },
         {
           "id": "brake-hose",
@@ -146,7 +146,7 @@
           "title": "BRAKE HOSE",
           "type": "Component",
           "content": "Fluid conduit",
-          "image_url": "images/hose-component.jpg"
+          "image_id": "brake-hose"
         },
         {
           "id": "brake-hose-desc",
@@ -155,7 +155,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Carries brake fluid Flexible connections Inspect for damage",
-          "image_url": "images/hose-component.jpg"
+          "image_id": "brake-hose"
         },
         {
           "id": "brake-line",
@@ -164,7 +164,7 @@
           "title": "BRAKE LINE",
           "type": "Component",
           "content": "Hard piping",
-          "image_url": "images/line-component.jpg"
+          "image_id": "brake-hose"
         },
         {
           "id": "brake-line-desc",
@@ -173,7 +173,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Fixed conduits Rigid protection Steel tubes",
-          "image_url": "images/line-component.jpg"
+          "image_id": "brake-hose"
         },
         {
           "id": "proportioning",
@@ -182,7 +182,7 @@
           "title": "PROPORTIONING VALVE",
           "type": "Component",
           "content": "Pressure distribution",
-          "image_url": "images/prop-component.jpg"
+          "image_id": "braking-circuit"
         },
         {
           "id": "proportioning-desc",
@@ -191,7 +191,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Adjusts front rear pressure Prevents rear skid Improves control",
-          "image_url": "images/prop-component.jpg"
+          "image_id": "braking-circuit"
         },
         {
           "id": "brake-switch",
@@ -200,7 +200,7 @@
           "title": "BRAKE SWITCH",
           "type": "Component",
           "content": "Light activation",
-          "image_url": "images/switch-component.jpg"
+          "image_id": "braking-circuit"
         },
         {
           "id": "brake-switch-desc",
@@ -209,7 +209,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Activates brake lights Pedal activated Safety signal",
-          "image_url": "images/switch-component.jpg"
+          "image_id": "braking-circuit"
         },
         {
           "id": "handbrake",
@@ -218,7 +218,7 @@
           "title": "HANDBRAKE (PARKING)",
           "type": "Component",
           "content": "Vehicle holding",
-          "image_url": "images/hand-component.jpg"
+          "image_id": "braking-circuit"
         },
         {
           "id": "handbrake-desc",
@@ -227,7 +227,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Mechanical hold Independent system Prevents rolling",
-          "image_url": "images/hand-component.jpg"
+          "image_id": "braking-circuit"
         },
         {
           "id": "brake-pedal",
@@ -236,7 +236,7 @@
           "title": "BRAKE PEDAL",
           "type": "Component",
           "content": "Driver input",
-          "image_url": "images/pedal-component.jpg"
+          "image_id": "braking-circuit"
         },
         {
           "id": "brake-pedal-desc",
@@ -245,7 +245,7 @@
           "title": "Operation",
           "type": "Component",
           "content": "Mechanical linkage Activates master cylinder Servo assisted",
-          "image_url": "images/pedal-component.jpg"
+          "image_id": "braking-circuit"
         }
       ]
     },
@@ -261,7 +261,7 @@
           "title": "ESP - Stability Control",
           "type": "Safety",
           "content": "Skid control",
-          "image_url": "images/esp-safety.jpg"
+          "image_id": "esp-system"
         },
         {
           "id": "esp-desc",
@@ -270,7 +270,7 @@
           "title": "Function",
           "type": "Safety",
           "content": "Monitors vehicle dynamics Applies individual brakes Corrects oversteer",
-          "image_url": "images/esp-safety.jpg"
+          "image_id": "esp-system"
         },
         {
           "id": "fade-name",
@@ -279,7 +279,7 @@
           "title": "BRAKE FADE",
           "type": "Phenomenon",
           "content": "Performance loss",
-          "image_url": "images/fade-phenomenon.jpg"
+          "image_id": "brake-rotor"
         },
         {
           "id": "fade-desc",
@@ -288,7 +288,7 @@
           "title": "Cause",
           "type": "Phenomenon",
           "content": "Excessive heat Fluid vaporization Reduced friction",
-          "image_url": "images/fade-phenomenon.jpg"
+          "image_id": "brake-rotor"
         },
         {
           "id": "glazing",
@@ -297,7 +297,7 @@
           "title": "PAD GLAZING",
           "type": "Condition",
           "content": "Surface hardening",
-          "image_url": "images/glaze-condition.jpg"
+          "image_id": "brake-pads"
         },
         {
           "id": "glazing-desc",
@@ -306,7 +306,7 @@
           "title": "Effect",
           "type": "Condition",
           "content": "Reduces friction Requires replacement Prevents stopping",
-          "image_url": "images/glaze-condition.jpg"
+          "image_id": "brake-pads"
         },
         {
           "id": "bedding",
@@ -315,7 +315,7 @@
           "title": "BRAKE BEDDING",
           "type": "Process",
           "content": "Break-in procedure",
-          "image_url": "images/bed-process.jpg"
+          "image_id": "disc-brake"
         },
         {
           "id": "bedding-desc",
@@ -324,7 +324,7 @@
           "title": "Purpose",
           "type": "Process",
           "content": "Seats pad material Transfers material to rotor Establishes contact",
-          "image_url": "images/bed-process.jpg"
+          "image_id": "disc-brake"
         },
         {
           "id": "pedal-feel",
@@ -333,7 +333,7 @@
           "title": "PEDAL FEEL",
           "type": "Characteristic",
           "content": "Driver feedback",
-          "image_url": "images/feel-characteristic.jpg"
+          "image_id": "braking-circuit"
         },
         {
           "id": "pedal-feel-desc",
@@ -342,7 +342,7 @@
           "title": "Factors",
           "type": "Characteristic",
           "content": "Booster assist Pad material Fluid type",
-          "image_url": "images/feel-characteristic.jpg"
+          "image_id": "braking-circuit"
         },
         {
           "id": "stopping-distance",
@@ -351,7 +351,7 @@
           "title": "STOPPING DISTANCE",
           "type": "Performance",
           "content": "Braking efficiency",
-          "image_url": "images/stop-performance.jpg"
+          "image_id": "braking-circuit"
         },
         {
           "id": "stopping-distance-desc",
@@ -360,7 +360,7 @@
           "title": "Variables",
           "type": "Performance",
           "content": "Speed Road surface Pad condition Weight",
-          "image_url": "images/stop-performance.jpg"
+          "image_id": "braking-circuit"
         }
       ]
     }

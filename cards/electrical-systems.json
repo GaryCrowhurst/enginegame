@@ -13,7 +13,7 @@
           "title": "BATTERY",
           "type": "Component",
           "content": "Power source",
-          "image_url": "images/battery-component.jpg"
+          "image_id": "battery"
         },
         {
           "id": "battery-desc",
@@ -22,7 +22,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Stores electrical energy Provides starting power",
-          "image_url": "images/battery-component.jpg"
+          "image_id": "battery"
         },
         {
           "id": "alternator-name",
@@ -31,7 +31,7 @@
           "title": "ALTERNATOR",
           "type": "Component",
           "content": "Power generator",
-          "image_url": "images/alternator-component.jpg"
+          "image_id": "alternator"
         },
         {
           "id": "alternator-desc",
@@ -40,7 +40,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Generates electricity Charges battery Runs electrical systems",
-          "image_url": "images/alternator-component.jpg"
+          "image_id": "alternator"
         },
         {
           "id": "starter-name",
@@ -49,7 +49,7 @@
           "title": "STARTER MOTOR",
           "type": "Component",
           "content": "Engine ignition",
-          "image_url": "images/starter-component.jpg"
+          "image_id": "starter-motor"
         },
         {
           "id": "starter-desc",
@@ -58,7 +58,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Cranks engine for starting Uses battery power",
-          "image_url": "images/starter-component.jpg"
+          "image_id": "starter-motor"
         },
         {
           "id": "headlight-name",
@@ -67,7 +67,7 @@
           "title": "HEADLIGHT",
           "type": "Component",
           "content": "Front lighting",
-          "image_url": "images/headlight-component.jpg"
+          "image_id": "battery"
         },
         {
           "id": "headlight-desc",
@@ -76,7 +76,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Illuminates road ahead Safety lighting",
-          "image_url": "images/headlight-component.jpg"
+          "image_id": "battery"
         },
         {
           "id": "wiring-name",
@@ -85,7 +85,7 @@
           "title": "WIRING HARNESS",
           "type": "Component",
           "content": "Electrical connections",
-          "image_url": "images/wiring-component.jpg"
+          "image_id": "wiring-loom"
         },
         {
           "id": "wiring-desc",
@@ -94,7 +94,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Connects all electrical components Transmits power and signals",
-          "image_url": "images/wiring-component.jpg"
+          "image_id": "wiring-loom"
         }
       ]
     },
@@ -110,7 +110,7 @@
           "title": "ECM - Engine Control Module",
           "type": "Component",
           "content": "Main computer",
-          "image_url": "images/ecm-component.jpg"
+          "image_id": "ecm"
         },
         {
           "id": "ecm-desc",
@@ -119,7 +119,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Controls engine operation Manages fuel injection Optimizes performance",
-          "image_url": "images/ecm-component.jpg"
+          "image_id": "ecm"
         },
         {
           "id": "can-bus",
@@ -128,7 +128,7 @@
           "title": "CAN BUS",
           "type": "System",
           "content": "Data network",
-          "image_url": "images/canbus-system.jpg"
+          "image_id": "can-bus-diagram"
         },
         {
           "id": "can-bus-desc",
@@ -137,7 +137,7 @@
           "title": "Purpose",
           "type": "System",
           "content": "Connects all modules Transmits diagnostic data High-speed communication",
-          "image_url": "images/canbus-system.jpg"
+          "image_id": "can-bus-diagram"
         },
         {
           "id": "relay-name",
@@ -146,7 +146,7 @@
           "title": "RELAY",
           "type": "Component",
           "content": "Electrical switch",
-          "image_url": "images/relay-component.jpg"
+          "image_id": "fuse-box"
         },
         {
           "id": "relay-desc",
@@ -155,7 +155,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Switches high power circuits Controls fan motors Protective device",
-          "image_url": "images/relay-component.jpg"
+          "image_id": "fuse-box"
         },
         {
           "id": "fuse-name",
@@ -164,7 +164,7 @@
           "title": "FUSE",
           "type": "Component",
           "content": "Circuit protection",
-          "image_url": "images/fuse-component.jpg"
+          "image_id": "fuse-box"
         },
         {
           "id": "fuse-desc",
@@ -173,7 +173,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Protects wiring Breaks circuit on overload Replaceable safety device",
-          "image_url": "images/fuse-component.jpg"
+          "image_id": "fuse-box"
         },
         {
           "id": "sensor-name",
@@ -182,7 +182,7 @@
           "title": "SENSOR",
           "type": "Component",
           "content": "Data detection",
-          "image_url": "images/sensor-component.jpg"
+          "image_id": "lambda-sensor"
         },
         {
           "id": "sensor-desc",
@@ -191,7 +191,7 @@
           "title": "Function",
           "type": "Component",
           "content": "Monitors engine conditions Sends data to ECM Provides feedback",
-          "image_url": "images/sensor-component.jpg"
+          "image_id": "lambda-sensor"
         },
         {
           "id": "ground-name",
@@ -200,7 +200,7 @@
           "title": "GROUND CONNECTION",
           "type": "Component",
           "content": "Return path",
-          "image_url": "images/ground-component.jpg"
+          "image_id": "wiring-loom"
         },
         {
           "id": "ground-desc",
@@ -209,7 +209,7 @@
           "title": "Importance",
           "type": "Component",
           "content": "Completes electrical circuit Essential for all systems Safety critical",
-          "image_url": "images/ground-component.jpg"
+          "image_id": "wiring-loom"
         },
         {
           "id": "charging-system",
@@ -218,7 +218,7 @@
           "title": "CHARGING SYSTEM",
           "type": "System",
           "content": "Voltage regulation",
-          "image_url": "images/charge-system.jpg"
+          "image_id": "alternator"
         },
         {
           "id": "charging-system-desc",
@@ -227,7 +227,7 @@
           "title": "Operation",
           "type": "System",
           "content": "Alternator charges battery Regulator controls output Maintains voltage",
-          "image_url": "images/charge-system.jpg"
+          "image_id": "alternator"
         },
         {
           "id": "starting-system",
@@ -236,7 +236,7 @@
           "title": "STARTING SYSTEM",
           "type": "System",
           "content": "Engine cranking",
-          "image_url": "images/start-system.jpg"
+          "image_id": "starter-motor"
         },
         {
           "id": "starting-system-desc",
@@ -245,7 +245,7 @@
           "title": "Operation",
           "type": "System",
           "content": "Battery powers starter High current draw Solenoid engages pinion",
-          "image_url": "images/start-system.jpg"
+          "image_id": "starter-motor"
         }
       ]
     },
@@ -261,7 +261,7 @@
           "title": "DTC - Diagnostic Trouble Code",
           "type": "Concept",
           "content": "Error identification",
-          "image_url": "images/dtc-concept.jpg"
+          "image_id": "obd-scanner"
         },
         {
           "id": "dtc-desc",
@@ -270,7 +270,7 @@
           "title": "Function",
           "type": "Concept",
           "content": "Identifies system faults Stored in ECM P-codes B-codes U-codes",
-          "image_url": "images/dtc-concept.jpg"
+          "image_id": "obd-scanner"
         },
         {
           "id": "obd-name",
@@ -279,7 +279,7 @@
           "title": "OBD-II",
           "type": "System",
           "content": "Diagnostic standard",
-          "image_url": "images/obd-system.jpg"
+          "image_id": "obd-scanner"
         },
         {
           "id": "obd-desc",
@@ -288,7 +288,7 @@
           "title": "Purpose",
           "type": "System",
           "content": "Standardized diagnostics Scan tool compatible Emissions monitoring",
-          "image_url": "images/obd-system.jpg"
+          "image_id": "obd-scanner"
         },
         {
           "id": "can-protocol",
@@ -297,7 +297,7 @@
           "title": "CAN PROTOCOL",
           "type": "System",
           "content": "Communication standard",
-          "image_url": "images/canproto-system.jpg"
+          "image_id": "can-bus-diagram"
         },
         {
           "id": "can-protocol-desc",
@@ -306,7 +306,7 @@
           "title": "Features",
           "type": "System",
           "content": "500 kbps data rate Multi-module network Fault tolerant",
-          "image_url": "images/canproto-system.jpg"
+          "image_id": "can-bus-diagram"
         },
         {
           "id": "pid-name",
@@ -315,7 +315,7 @@
           "title": "PID - Parameter ID",
           "type": "Concept",
           "content": "Live data display",
-          "image_url": "images/pid-concept.jpg"
+          "image_id": "multimeter"
         },
         {
           "id": "pid-desc",
@@ -324,7 +324,7 @@
           "title": "Usage",
           "type": "Concept",
           "content": "Monitors system parameters Engine temp fuel trim Air mass",
-          "image_url": "images/pid-concept.jpg"
+          "image_id": "multimeter"
         },
         {
           "id": "multiplex-name",
@@ -333,7 +333,7 @@
           "title": "MULTIPLEXED WIRING",
           "type": "System",
           "content": "Signal sharing",
-          "image_url": "images/multiplex-system.jpg"
+          "image_id": "wiring-loom"
         },
         {
           "id": "multiplex-desc",
@@ -342,7 +342,7 @@
           "title": "Benefit",
           "type": "System",
           "content": "Reduces wiring complexity Multiple signals one wire Sophisticated control",
-          "image_url": "images/multiplex-system.jpg"
+          "image_id": "wiring-loom"
         },
         {
           "id": "bms-name",
@@ -351,7 +351,7 @@
           "title": "BMS - Battery Management",
           "type": "System",
           "content": "Battery protection",
-          "image_url": "images/bms-system.jpg"
+          "image_id": "battery"
         },
         {
           "id": "bms-desc",
@@ -360,7 +360,7 @@
           "title": "Function",
           "type": "System",
           "content": "Monitors battery health Prevents overcharge Balances cells",
-          "image_url": "images/bms-system.jpg"
+          "image_id": "battery"
         }
       ]
     }
